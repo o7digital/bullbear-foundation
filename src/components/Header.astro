@@ -3,8 +3,9 @@ import {Image} from 'astro:assets';
 import {media,logo} from '../data/media';
 import {navigation} from '../data/site';
 const path=Astro.url.pathname;
+const privacyHeader=/^\/(?:(?:es|en|fr|de|it|ru|pt|zh|ja)\/)?aviso-de-privacidad\/?$/.test(path);
 ---
-<header class="site-header">
+<header class:list={['site-header',{'site-header--privacy':privacyHeader}]}>
  <div class="container header-inner">
   <a class="brand" href="/" aria-label="Bull & Bear Foundation — Inicio"><Image src={media(logo)} width={230} height={54} alt="Bull & Bear Foundation" loading="eager" /></a>
   <button class="menu-toggle" aria-label="Abrir menú" aria-expanded="false" aria-controls="main-navigation"><span></span><span></span><span></span></button>
@@ -15,11 +16,13 @@ const path=Astro.url.pathname;
  </div>
 </header>
 <script>
- const header=document.querySelector<HTMLElement>('.site-header');
+ const header=document.querySelector<HTMLElement>('.site-header--privacy');
  const updateHeader=()=>header?.classList.toggle('is-scrolled',window.scrollY>50);
- updateHeader();
- window.addEventListener('scroll',updateHeader,{passive:true});
- window.addEventListener('pageshow',updateHeader);
+ if(header){
+  updateHeader();
+  window.addEventListener('scroll',updateHeader,{passive:true});
+  window.addEventListener('pageshow',updateHeader);
+ }
  const button=document.querySelector<HTMLButtonElement>('.menu-toggle');
  const nav=document.querySelector<HTMLElement>('#main-navigation');
  function closeMenu(){button?.setAttribute('aria-expanded','false');nav?.classList.remove('is-open');}
@@ -31,14 +34,14 @@ const path=Astro.url.pathname;
 </script>
 
 <style>
- .site-header {
+ .site-header--privacy {
   position: sticky;
   top: 0;
   isolation: isolate;
   transition: background-color .22s ease, border-color .22s ease, color .22s ease;
  }
- :global(html:not(.js)) .site-header { position: relative; }
- .site-header::before {
+ :global(html:not(.js)) .site-header--privacy { position: relative; }
+ .site-header--privacy::before {
   content: '';
   position: absolute;
   inset: 0 0 -50px;
@@ -48,24 +51,24 @@ const path=Astro.url.pathname;
   pointer-events: none;
   transition: opacity .22s ease;
  }
- .site-header.is-scrolled { background: transparent; border-bottom-color: transparent; color: #fff; }
- .site-header.is-scrolled::before { opacity: 1; }
- .brand { transition: filter .22s ease; }
- .site-header.is-scrolled .brand { filter: brightness(0) invert(1); }
- .site-header.is-scrolled .button { background: var(--lime); border-color: var(--lime); color: var(--green); }
- .site-header.is-scrolled .button:hover { background: #e3edcf; }
- .site-header.is-scrolled .menu-toggle span { background: #fff; }
- .site-header.is-scrolled nav>a:not(.button)::after { background: currentColor; }
+ .site-header--privacy.is-scrolled { background: transparent; border-bottom-color: transparent; color: #fff; }
+ .site-header--privacy.is-scrolled::before { opacity: 1; }
+ .site-header--privacy .brand { transition: filter .22s ease; }
+ .site-header--privacy.is-scrolled .brand { filter: brightness(0) invert(1); }
+ .site-header--privacy.is-scrolled .button { background: var(--lime); border-color: var(--lime); color: var(--green); }
+ .site-header--privacy.is-scrolled .button:hover { background: #e3edcf; }
+ .site-header--privacy.is-scrolled .menu-toggle span { background: #fff; }
+ .site-header--privacy.is-scrolled nav>a:not(.button)::after { background: currentColor; }
  @media (max-width: 1099px) {
-  .site-header.is-scrolled nav { color: var(--ink); }
-  :global(html.js) .site-header nav { max-height: calc(100svh - 85px); overflow-y: auto; overscroll-behavior: contain; }
+  .site-header--privacy.is-scrolled nav { color: var(--ink); }
+  :global(html.js) .site-header--privacy nav { max-height: calc(100svh - 85px); overflow-y: auto; overscroll-behavior: contain; }
  }
  @media (max-width: 767px) {
-  :global(html.js) .site-header nav { max-height: calc(100svh - 80px); }
+  :global(html.js) .site-header--privacy nav { max-height: calc(100svh - 80px); }
  }
  @media print {
-  .site-header, .site-header.is-scrolled { position: static; background: var(--ivory); color: var(--ink); }
-  .site-header::before { display: none; }
-  .site-header.is-scrolled .brand { filter: none; }
+  .site-header--privacy, .site-header--privacy.is-scrolled { position: static; background: var(--ivory); color: var(--ink); }
+  .site-header--privacy::before { display: none; }
+  .site-header--privacy.is-scrolled .brand { filter: none; }
  }
 </style>
