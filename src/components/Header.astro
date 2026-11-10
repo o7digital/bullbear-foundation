@@ -1,4 +1,5 @@
 ---
+import LanguageSwitcher from './LanguageSwitcher.astro';
 import {Image} from 'astro:assets';
 import {media,logo} from '../data/media';
 import {navigation} from '../data/site';
@@ -7,11 +8,11 @@ const path=Astro.url.pathname;
 <header class="site-header">
  <div class="container header-inner">
   <a class="brand" href="/" aria-label="Bull & Bear Foundation — Inicio"><Image src={media(logo)} width={230} height={54} alt="Bull & Bear Foundation" loading="eager" /></a>
-  <button class="menu-toggle" aria-label="Abrir menú" aria-expanded="false" aria-controls="main-navigation"><span></span><span></span><span></span></button>
-  <nav id="main-navigation" aria-label="Navegación principal">
+   <nav id="main-navigation" aria-label="Navegación principal">
    {navigation.map(item=><a href={item.href} aria-current={path.startsWith(item.href)?'page':undefined}>{item.label}</a>)}
    <a class="button button-small" href="/donar-ahora/">Donar</a>
   </nav>
+  <div class="header-tools"><LanguageSwitcher/><button class="menu-toggle" aria-label="Abrir menú" aria-expanded="false" aria-controls="main-navigation"><span></span><span></span><span></span></button></div>
  </div>
 </header>
 <script>
@@ -26,12 +27,14 @@ const path=Astro.url.pathname;
  button?.addEventListener('click',()=>{const open=button.getAttribute('aria-expanded')!=='true';button.setAttribute('aria-expanded',String(open));nav?.classList.toggle('is-open',open);if(open)nav?.querySelector('a')?.focus();});
  document.addEventListener('keydown',(event)=>{if(button?.getAttribute('aria-expanded')!=='true')return;if(event.key==='Escape'){closeMenu();button.focus();}if(event.key==='Tab'&&nav){const links=Array.from(nav.querySelectorAll('a'));const last=links.at(-1);if(!event.shiftKey&&document.activeElement===last){event.preventDefault();button?.focus();}else if(event.shiftKey&&document.activeElement===button){event.preventDefault();last?.focus();}}});
  nav?.querySelectorAll('a').forEach(a=>a.addEventListener('click',closeMenu));
- window.matchMedia('(min-width: 1100px)').addEventListener('change',closeMenu);
+ window.matchMedia('(min-width: 1280px)').addEventListener('change',closeMenu);
 
 </script>
 
 <style>
+ .header-tools { display: flex; align-items: center; gap: 20px; flex: none; }
  .site-header {
+  --header-height: 100px;
   position: sticky;
   top: 0;
   isolation: isolate;
@@ -56,11 +59,24 @@ const path=Astro.url.pathname;
  .site-header.is-scrolled .button:hover { background: #e3edcf; }
  .site-header.is-scrolled .menu-toggle span { background: #fff; }
  .site-header.is-scrolled nav>a:not(.button)::after { background: currentColor; }
- @media (max-width: 1099px) {
+ @media (max-width: 1279px) {
+  .site-header .menu-toggle { display: block; }
+  :global(html:not(.js)) .menu-toggle { display: none; }
+  :global(html:not(.js)) .header-inner { flex-wrap: wrap; height: auto; }
+  :global(html:not(.js)) .site-header { height: auto; }
+  :global(html:not(.js)) .site-header nav { width: 100%; order: 3; flex-wrap: wrap; }
+  :global(html.js) .site-header nav { display: none; position: absolute; top: 100%; left: 0; right: 0; padding: 25px 35px 35px; background: var(--ivory); border-bottom: 1px solid var(--line); box-shadow: 0 20px 25px #142a2215; align-items: stretch; flex-direction: column; gap: 8px; }
+  :global(html.js) .site-header nav.is-open { display: flex; }
+  .site-header nav>a { font-size: 1.1rem; min-height: 48px; }
+  .site-header nav .button { margin-top: 10px; align-self: start; }
   .site-header.is-scrolled nav { color: var(--ink); }
-  :global(html.js) .site-header nav { max-height: calc(100svh - 85px); overflow-y: auto; overscroll-behavior: contain; }
+  :global(html.js) .site-header nav { max-height: calc(100svh - var(--header-height)); overflow-y: auto; overscroll-behavior: contain; }
  }
+ @media (max-width: 1099px) { .site-header { --header-height: 85px; } }
  @media (max-width: 767px) {
+  .site-header { --header-height: 80px; }
+  .site-header .brand { width: min(44vw, 190px); }
+  .header-tools { gap: 15px; }
   :global(html.js) .site-header nav { max-height: calc(100svh - 80px); }
  }
  @media print {

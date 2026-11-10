@@ -2,7 +2,7 @@
 import sansFont from '@fontsource/dm-sans/files/dm-sans-latin-400-normal.woff2?url';import serifFont from '@fontsource/lora/files/lora-latin-400-normal.woff2?url';
 import StudioMedia from '../components/StudioMedia.astro';
 import Header from '../components/Header.astro';import Footer from '../components/Footer.astro';import {site} from '../data/site';
-import '@fontsource/dm-sans/latin-400.css';import '@fontsource/dm-sans/latin-500.css';import '@fontsource/dm-sans/latin-600.css';import '@fontsource/lora/latin-400.css';import '@fontsource/lora/latin-400-italic.css';import '../styles/global.css';
+import '@fontsource/dm-sans/latin-400.css';import '@fontsource/dm-sans/latin-500.css';import '@fontsource/dm-sans/latin-600.css';import '@fontsource/lora/latin-400.css';import '@fontsource/lora/cyrillic-400.css';import '@fontsource/lora/cyrillic-400-italic.css';import '@fontsource/lora/latin-400-italic.css';import '../styles/global.css';
 interface Props{title:string;description:string;image?:string;article?:Record<string,unknown>;noindex?:boolean;}
 const {title,description,image='/social.jpg',article,noindex=false}=Astro.props;
 const mediaSection:Record<string,string>={'/':'inicio','/quienes-somos/':'fundacion','/programas/':'programas','/actividades-bb-foundation/':'actividades','/galeria/':'galeria','/transparencia/':'transparencia','/voluntariado/':'participar','/contacto/':'contacto'};

@@ -14,6 +14,16 @@
       "statusCode": 307
     },
     {
+      "source": "/es",
+      "destination": "/",
+      "statusCode": 308
+    },
+    {
+      "source": "/es/",
+      "destination": "/",
+      "statusCode": 308
+    },
+    {
       "source": "/actividades",
       "destination": "/actividades-bb-foundation/",
       "statusCode": 301
@@ -131,6 +141,966 @@
     {
       "source": "/pruebas/voluntareado/",
       "destination": "/voluntariado/",
+      "statusCode": 301
+    },
+    {
+      "source": "/en/actividades",
+      "destination": "/en/actividades-bb-foundation/",
+      "statusCode": 301
+    },
+    {
+      "source": "/en/actividades/",
+      "destination": "/en/actividades-bb-foundation/",
+      "statusCode": 301
+    },
+    {
+      "source": "/en/haleria",
+      "destination": "/en/galeria/",
+      "statusCode": 301
+    },
+    {
+      "source": "/en/haleria/",
+      "destination": "/en/galeria/",
+      "statusCode": 301
+    },
+    {
+      "source": "/en/voluntareado",
+      "destination": "/en/voluntariado/",
+      "statusCode": 301
+    },
+    {
+      "source": "/en/voluntareado/",
+      "destination": "/en/voluntariado/",
+      "statusCode": 301
+    },
+    {
+      "source": "/en/enterate",
+      "destination": "/en/transparencia/",
+      "statusCode": 301
+    },
+    {
+      "source": "/en/enterate/",
+      "destination": "/en/transparencia/",
+      "statusCode": 301
+    },
+    {
+      "source": "/en/orientacion",
+      "destination": "/en/programas/#orientacion",
+      "statusCode": 301
+    },
+    {
+      "source": "/en/orientacion/",
+      "destination": "/en/programas/#orientacion",
+      "statusCode": 301
+    },
+    {
+      "source": "/en/comida-infantil",
+      "destination": "/en/programas/#asistencia-social",
+      "statusCode": 301
+    },
+    {
+      "source": "/en/comida-infantil/",
+      "destination": "/en/programas/#asistencia-social",
+      "statusCode": 301
+    },
+    {
+      "source": "/en/ayuda-y-esperanza",
+      "destination": "/en/programas/#asistencia-social",
+      "statusCode": 301
+    },
+    {
+      "source": "/en/ayuda-y-esperanza/",
+      "destination": "/en/programas/#asistencia-social",
+      "statusCode": 301
+    },
+    {
+      "source": "/en/pagina-en-construccion",
+      "destination": "/en/actividades-bb-foundation/",
+      "statusCode": 301
+    },
+    {
+      "source": "/en/pagina-en-construccion/",
+      "destination": "/en/actividades-bb-foundation/",
+      "statusCode": 301
+    },
+    {
+      "source": "/en/pruebas/contacto",
+      "destination": "/en/contacto/",
+      "statusCode": 301
+    },
+    {
+      "source": "/en/pruebas/contacto/",
+      "destination": "/en/contacto/",
+      "statusCode": 301
+    },
+    {
+      "source": "/en/pruebas/quienes-somos",
+      "destination": "/en/quienes-somos/",
+      "statusCode": 301
+    },
+    {
+      "source": "/en/pruebas/quienes-somos/",
+      "destination": "/en/quienes-somos/",
+      "statusCode": 301
+    },
+    {
+      "source": "/en/pruebas/ayuda-y-esperanza",
+      "destination": "/en/programas/#asistencia-social",
+      "statusCode": 301
+    },
+    {
+      "source": "/en/pruebas/ayuda-y-esperanza/",
+      "destination": "/en/programas/#asistencia-social",
+      "statusCode": 301
+    },
+    {
+      "source": "/en/pruebas/voluntareado",
+      "destination": "/en/voluntariado/",
+      "statusCode": 301
+    },
+    {
+      "source": "/en/pruebas/voluntareado/",
+      "destination": "/en/voluntariado/",
+      "statusCode": 301
+    },
+    {
+      "source": "/fr/actividades",
+      "destination": "/fr/actividades-bb-foundation/",
+      "statusCode": 301
+    },
+    {
+      "source": "/fr/actividades/",
+      "destination": "/fr/actividades-bb-foundation/",
+      "statusCode": 301
+    },
+    {
+      "source": "/fr/haleria",
+      "destination": "/fr/galeria/",
+      "statusCode": 301
+    },
+    {
+      "source": "/fr/haleria/",
+      "destination": "/fr/galeria/",
+      "statusCode": 301
+    },
+    {
+      "source": "/fr/voluntareado",
+      "destination": "/fr/voluntariado/",
+      "statusCode": 301
+    },
+    {
+      "source": "/fr/voluntareado/",
+      "destination": "/fr/voluntariado/",
+      "statusCode": 301
+    },
+    {
+      "source": "/fr/enterate",
+      "destination": "/fr/transparencia/",
+      "statusCode": 301
+    },
+    {
+      "source": "/fr/enterate/",
+      "destination": "/fr/transparencia/",
+      "statusCode": 301
+    },
+    {
+      "source": "/fr/orientacion",
+      "destination": "/fr/programas/#orientacion",
+      "statusCode": 301
+    },
+    {
+      "source": "/fr/orientacion/",
+      "destination": "/fr/programas/#orientacion",
+      "statusCode": 301
+    },
+    {
+      "source": "/fr/comida-infantil",
+      "destination": "/fr/programas/#asistencia-social",
+      "statusCode": 301
+    },
+    {
+      "source": "/fr/comida-infantil/",
+      "destination": "/fr/programas/#asistencia-social",
+      "statusCode": 301
+    },
+    {
+      "source": "/fr/ayuda-y-esperanza",
+      "destination": "/fr/programas/#asistencia-social",
+      "statusCode": 301
+    },
+    {
+      "source": "/fr/ayuda-y-esperanza/",
+      "destination": "/fr/programas/#asistencia-social",
+      "statusCode": 301
+    },
+    {
+      "source": "/fr/pagina-en-construccion",
+      "destination": "/fr/actividades-bb-foundation/",
+      "statusCode": 301
+    },
+    {
+      "source": "/fr/pagina-en-construccion/",
+      "destination": "/fr/actividades-bb-foundation/",
+      "statusCode": 301
+    },
+    {
+      "source": "/fr/pruebas/contacto",
+      "destination": "/fr/contacto/",
+      "statusCode": 301
+    },
+    {
+      "source": "/fr/pruebas/contacto/",
+      "destination": "/fr/contacto/",
+      "statusCode": 301
+    },
+    {
+      "source": "/fr/pruebas/quienes-somos",
+      "destination": "/fr/quienes-somos/",
+      "statusCode": 301
+    },
+    {
+      "source": "/fr/pruebas/quienes-somos/",
+      "destination": "/fr/quienes-somos/",
+      "statusCode": 301
+    },
+    {
+      "source": "/fr/pruebas/ayuda-y-esperanza",
+      "destination": "/fr/programas/#asistencia-social",
+      "statusCode": 301
+    },
+    {
+      "source": "/fr/pruebas/ayuda-y-esperanza/",
+      "destination": "/fr/programas/#asistencia-social",
+      "statusCode": 301
+    },
+    {
+      "source": "/fr/pruebas/voluntareado",
+      "destination": "/fr/voluntariado/",
+      "statusCode": 301
+    },
+    {
+      "source": "/fr/pruebas/voluntareado/",
+      "destination": "/fr/voluntariado/",
+      "statusCode": 301
+    },
+    {
+      "source": "/de/actividades",
+      "destination": "/de/actividades-bb-foundation/",
+      "statusCode": 301
+    },
+    {
+      "source": "/de/actividades/",
+      "destination": "/de/actividades-bb-foundation/",
+      "statusCode": 301
+    },
+    {
+      "source": "/de/haleria",
+      "destination": "/de/galeria/",
+      "statusCode": 301
+    },
+    {
+      "source": "/de/haleria/",
+      "destination": "/de/galeria/",
+      "statusCode": 301
+    },
+    {
+      "source": "/de/voluntareado",
+      "destination": "/de/voluntariado/",
+      "statusCode": 301
+    },
+    {
+      "source": "/de/voluntareado/",
+      "destination": "/de/voluntariado/",
+      "statusCode": 301
+    },
+    {
+      "source": "/de/enterate",
+      "destination": "/de/transparencia/",
+      "statusCode": 301
+    },
+    {
+      "source": "/de/enterate/",
+      "destination": "/de/transparencia/",
+      "statusCode": 301
+    },
+    {
+      "source": "/de/orientacion",
+      "destination": "/de/programas/#orientacion",
+      "statusCode": 301
+    },
+    {
+      "source": "/de/orientacion/",
+      "destination": "/de/programas/#orientacion",
+      "statusCode": 301
+    },
+    {
+      "source": "/de/comida-infantil",
+      "destination": "/de/programas/#asistencia-social",
+      "statusCode": 301
+    },
+    {
+      "source": "/de/comida-infantil/",
+      "destination": "/de/programas/#asistencia-social",
+      "statusCode": 301
+    },
+    {
+      "source": "/de/ayuda-y-esperanza",
+      "destination": "/de/programas/#asistencia-social",
+      "statusCode": 301
+    },
+    {
+      "source": "/de/ayuda-y-esperanza/",
+      "destination": "/de/programas/#asistencia-social",
+      "statusCode": 301
+    },
+    {
+      "source": "/de/pagina-en-construccion",
+      "destination": "/de/actividades-bb-foundation/",
+      "statusCode": 301
+    },
+    {
+      "source": "/de/pagina-en-construccion/",
+      "destination": "/de/actividades-bb-foundation/",
+      "statusCode": 301
+    },
+    {
+      "source": "/de/pruebas/contacto",
+      "destination": "/de/contacto/",
+      "statusCode": 301
+    },
+    {
+      "source": "/de/pruebas/contacto/",
+      "destination": "/de/contacto/",
+      "statusCode": 301
+    },
+    {
+      "source": "/de/pruebas/quienes-somos",
+      "destination": "/de/quienes-somos/",
+      "statusCode": 301
+    },
+    {
+      "source": "/de/pruebas/quienes-somos/",
+      "destination": "/de/quienes-somos/",
+      "statusCode": 301
+    },
+    {
+      "source": "/de/pruebas/ayuda-y-esperanza",
+      "destination": "/de/programas/#asistencia-social",
+      "statusCode": 301
+    },
+    {
+      "source": "/de/pruebas/ayuda-y-esperanza/",
+      "destination": "/de/programas/#asistencia-social",
+      "statusCode": 301
+    },
+    {
+      "source": "/de/pruebas/voluntareado",
+      "destination": "/de/voluntariado/",
+      "statusCode": 301
+    },
+    {
+      "source": "/de/pruebas/voluntareado/",
+      "destination": "/de/voluntariado/",
+      "statusCode": 301
+    },
+    {
+      "source": "/it/actividades",
+      "destination": "/it/actividades-bb-foundation/",
+      "statusCode": 301
+    },
+    {
+      "source": "/it/actividades/",
+      "destination": "/it/actividades-bb-foundation/",
+      "statusCode": 301
+    },
+    {
+      "source": "/it/haleria",
+      "destination": "/it/galeria/",
+      "statusCode": 301
+    },
+    {
+      "source": "/it/haleria/",
+      "destination": "/it/galeria/",
+      "statusCode": 301
+    },
+    {
+      "source": "/it/voluntareado",
+      "destination": "/it/voluntariado/",
+      "statusCode": 301
+    },
+    {
+      "source": "/it/voluntareado/",
+      "destination": "/it/voluntariado/",
+      "statusCode": 301
+    },
+    {
+      "source": "/it/enterate",
+      "destination": "/it/transparencia/",
+      "statusCode": 301
+    },
+    {
+      "source": "/it/enterate/",
+      "destination": "/it/transparencia/",
+      "statusCode": 301
+    },
+    {
+      "source": "/it/orientacion",
+      "destination": "/it/programas/#orientacion",
+      "statusCode": 301
+    },
+    {
+      "source": "/it/orientacion/",
+      "destination": "/it/programas/#orientacion",
+      "statusCode": 301
+    },
+    {
+      "source": "/it/comida-infantil",
+      "destination": "/it/programas/#asistencia-social",
+      "statusCode": 301
+    },
+    {
+      "source": "/it/comida-infantil/",
+      "destination": "/it/programas/#asistencia-social",
+      "statusCode": 301
+    },
+    {
+      "source": "/it/ayuda-y-esperanza",
+      "destination": "/it/programas/#asistencia-social",
+      "statusCode": 301
+    },
+    {
+      "source": "/it/ayuda-y-esperanza/",
+      "destination": "/it/programas/#asistencia-social",
+      "statusCode": 301
+    },
+    {
+      "source": "/it/pagina-en-construccion",
+      "destination": "/it/actividades-bb-foundation/",
+      "statusCode": 301
+    },
+    {
+      "source": "/it/pagina-en-construccion/",
+      "destination": "/it/actividades-bb-foundation/",
+      "statusCode": 301
+    },
+    {
+      "source": "/it/pruebas/contacto",
+      "destination": "/it/contacto/",
+      "statusCode": 301
+    },
+    {
+      "source": "/it/pruebas/contacto/",
+      "destination": "/it/contacto/",
+      "statusCode": 301
+    },
+    {
+      "source": "/it/pruebas/quienes-somos",
+      "destination": "/it/quienes-somos/",
+      "statusCode": 301
+    },
+    {
+      "source": "/it/pruebas/quienes-somos/",
+      "destination": "/it/quienes-somos/",
+      "statusCode": 301
+    },
+    {
+      "source": "/it/pruebas/ayuda-y-esperanza",
+      "destination": "/it/programas/#asistencia-social",
+      "statusCode": 301
+    },
+    {
+      "source": "/it/pruebas/ayuda-y-esperanza/",
+      "destination": "/it/programas/#asistencia-social",
+      "statusCode": 301
+    },
+    {
+      "source": "/it/pruebas/voluntareado",
+      "destination": "/it/voluntariado/",
+      "statusCode": 301
+    },
+    {
+      "source": "/it/pruebas/voluntareado/",
+      "destination": "/it/voluntariado/",
+      "statusCode": 301
+    },
+    {
+      "source": "/ru/actividades",
+      "destination": "/ru/actividades-bb-foundation/",
+      "statusCode": 301
+    },
+    {
+      "source": "/ru/actividades/",
+      "destination": "/ru/actividades-bb-foundation/",
+      "statusCode": 301
+    },
+    {
+      "source": "/ru/haleria",
+      "destination": "/ru/galeria/",
+      "statusCode": 301
+    },
+    {
+      "source": "/ru/haleria/",
+      "destination": "/ru/galeria/",
+      "statusCode": 301
+    },
+    {
+      "source": "/ru/voluntareado",
+      "destination": "/ru/voluntariado/",
+      "statusCode": 301
+    },
+    {
+      "source": "/ru/voluntareado/",
+      "destination": "/ru/voluntariado/",
+      "statusCode": 301
+    },
+    {
+      "source": "/ru/enterate",
+      "destination": "/ru/transparencia/",
+      "statusCode": 301
+    },
+    {
+      "source": "/ru/enterate/",
+      "destination": "/ru/transparencia/",
+      "statusCode": 301
+    },
+    {
+      "source": "/ru/orientacion",
+      "destination": "/ru/programas/#orientacion",
+      "statusCode": 301
+    },
+    {
+      "source": "/ru/orientacion/",
+      "destination": "/ru/programas/#orientacion",
+      "statusCode": 301
+    },
+    {
+      "source": "/ru/comida-infantil",
+      "destination": "/ru/programas/#asistencia-social",
+      "statusCode": 301
+    },
+    {
+      "source": "/ru/comida-infantil/",
+      "destination": "/ru/programas/#asistencia-social",
+      "statusCode": 301
+    },
+    {
+      "source": "/ru/ayuda-y-esperanza",
+      "destination": "/ru/programas/#asistencia-social",
+      "statusCode": 301
+    },
+    {
+      "source": "/ru/ayuda-y-esperanza/",
+      "destination": "/ru/programas/#asistencia-social",
+      "statusCode": 301
+    },
+    {
+      "source": "/ru/pagina-en-construccion",
+      "destination": "/ru/actividades-bb-foundation/",
+      "statusCode": 301
+    },
+    {
+      "source": "/ru/pagina-en-construccion/",
+      "destination": "/ru/actividades-bb-foundation/",
+      "statusCode": 301
+    },
+    {
+      "source": "/ru/pruebas/contacto",
+      "destination": "/ru/contacto/",
+      "statusCode": 301
+    },
+    {
+      "source": "/ru/pruebas/contacto/",
+      "destination": "/ru/contacto/",
+      "statusCode": 301
+    },
+    {
+      "source": "/ru/pruebas/quienes-somos",
+      "destination": "/ru/quienes-somos/",
+      "statusCode": 301
+    },
+    {
+      "source": "/ru/pruebas/quienes-somos/",
+      "destination": "/ru/quienes-somos/",
+      "statusCode": 301
+    },
+    {
+      "source": "/ru/pruebas/ayuda-y-esperanza",
+      "destination": "/ru/programas/#asistencia-social",
+      "statusCode": 301
+    },
+    {
+      "source": "/ru/pruebas/ayuda-y-esperanza/",
+      "destination": "/ru/programas/#asistencia-social",
+      "statusCode": 301
+    },
+    {
+      "source": "/ru/pruebas/voluntareado",
+      "destination": "/ru/voluntariado/",
+      "statusCode": 301
+    },
+    {
+      "source": "/ru/pruebas/voluntareado/",
+      "destination": "/ru/voluntariado/",
+      "statusCode": 301
+    },
+    {
+      "source": "/pt/actividades",
+      "destination": "/pt/actividades-bb-foundation/",
+      "statusCode": 301
+    },
+    {
+      "source": "/pt/actividades/",
+      "destination": "/pt/actividades-bb-foundation/",
+      "statusCode": 301
+    },
+    {
+      "source": "/pt/haleria",
+      "destination": "/pt/galeria/",
+      "statusCode": 301
+    },
+    {
+      "source": "/pt/haleria/",
+      "destination": "/pt/galeria/",
+      "statusCode": 301
+    },
+    {
+      "source": "/pt/voluntareado",
+      "destination": "/pt/voluntariado/",
+      "statusCode": 301
+    },
+    {
+      "source": "/pt/voluntareado/",
+      "destination": "/pt/voluntariado/",
+      "statusCode": 301
+    },
+    {
+      "source": "/pt/enterate",
+      "destination": "/pt/transparencia/",
+      "statusCode": 301
+    },
+    {
+      "source": "/pt/enterate/",
+      "destination": "/pt/transparencia/",
+      "statusCode": 301
+    },
+    {
+      "source": "/pt/orientacion",
+      "destination": "/pt/programas/#orientacion",
+      "statusCode": 301
+    },
+    {
+      "source": "/pt/orientacion/",
+      "destination": "/pt/programas/#orientacion",
+      "statusCode": 301
+    },
+    {
+      "source": "/pt/comida-infantil",
+      "destination": "/pt/programas/#asistencia-social",
+      "statusCode": 301
+    },
+    {
+      "source": "/pt/comida-infantil/",
+      "destination": "/pt/programas/#asistencia-social",
+      "statusCode": 301
+    },
+    {
+      "source": "/pt/ayuda-y-esperanza",
+      "destination": "/pt/programas/#asistencia-social",
+      "statusCode": 301
+    },
+    {
+      "source": "/pt/ayuda-y-esperanza/",
+      "destination": "/pt/programas/#asistencia-social",
+      "statusCode": 301
+    },
+    {
+      "source": "/pt/pagina-en-construccion",
+      "destination": "/pt/actividades-bb-foundation/",
+      "statusCode": 301
+    },
+    {
+      "source": "/pt/pagina-en-construccion/",
+      "destination": "/pt/actividades-bb-foundation/",
+      "statusCode": 301
+    },
+    {
+      "source": "/pt/pruebas/contacto",
+      "destination": "/pt/contacto/",
+      "statusCode": 301
+    },
+    {
+      "source": "/pt/pruebas/contacto/",
+      "destination": "/pt/contacto/",
+      "statusCode": 301
+    },
+    {
+      "source": "/pt/pruebas/quienes-somos",
+      "destination": "/pt/quienes-somos/",
+      "statusCode": 301
+    },
+    {
+      "source": "/pt/pruebas/quienes-somos/",
+      "destination": "/pt/quienes-somos/",
+      "statusCode": 301
+    },
+    {
+      "source": "/pt/pruebas/ayuda-y-esperanza",
+      "destination": "/pt/programas/#asistencia-social",
+      "statusCode": 301
+    },
+    {
+      "source": "/pt/pruebas/ayuda-y-esperanza/",
+      "destination": "/pt/programas/#asistencia-social",
+      "statusCode": 301
+    },
+    {
+      "source": "/pt/pruebas/voluntareado",
+      "destination": "/pt/voluntariado/",
+      "statusCode": 301
+    },
+    {
+      "source": "/pt/pruebas/voluntareado/",
+      "destination": "/pt/voluntariado/",
+      "statusCode": 301
+    },
+    {
+      "source": "/zh/actividades",
+      "destination": "/zh/actividades-bb-foundation/",
+      "statusCode": 301
+    },
+    {
+      "source": "/zh/actividades/",
+      "destination": "/zh/actividades-bb-foundation/",
+      "statusCode": 301
+    },
+    {
+      "source": "/zh/haleria",
+      "destination": "/zh/galeria/",
+      "statusCode": 301
+    },
+    {
+      "source": "/zh/haleria/",
+      "destination": "/zh/galeria/",
+      "statusCode": 301
+    },
+    {
+      "source": "/zh/voluntareado",
+      "destination": "/zh/voluntariado/",
+      "statusCode": 301
+    },
+    {
+      "source": "/zh/voluntareado/",
+      "destination": "/zh/voluntariado/",
+      "statusCode": 301
+    },
+    {
+      "source": "/zh/enterate",
+      "destination": "/zh/transparencia/",
+      "statusCode": 301
+    },
+    {
+      "source": "/zh/enterate/",
+      "destination": "/zh/transparencia/",
+      "statusCode": 301
+    },
+    {
+      "source": "/zh/orientacion",
+      "destination": "/zh/programas/#orientacion",
+      "statusCode": 301
+    },
+    {
+      "source": "/zh/orientacion/",
+      "destination": "/zh/programas/#orientacion",
+      "statusCode": 301
+    },
+    {
+      "source": "/zh/comida-infantil",
+      "destination": "/zh/programas/#asistencia-social",
+      "statusCode": 301
+    },
+    {
+      "source": "/zh/comida-infantil/",
+      "destination": "/zh/programas/#asistencia-social",
+      "statusCode": 301
+    },
+    {
+      "source": "/zh/ayuda-y-esperanza",
+      "destination": "/zh/programas/#asistencia-social",
+      "statusCode": 301
+    },
+    {
+      "source": "/zh/ayuda-y-esperanza/",
+      "destination": "/zh/programas/#asistencia-social",
+      "statusCode": 301
+    },
+    {
+      "source": "/zh/pagina-en-construccion",
+      "destination": "/zh/actividades-bb-foundation/",
+      "statusCode": 301
+    },
+    {
+      "source": "/zh/pagina-en-construccion/",
+      "destination": "/zh/actividades-bb-foundation/",
+      "statusCode": 301
+    },
+    {
+      "source": "/zh/pruebas/contacto",
+      "destination": "/zh/contacto/",
+      "statusCode": 301
+    },
+    {
+      "source": "/zh/pruebas/contacto/",
+      "destination": "/zh/contacto/",
+      "statusCode": 301
+    },
+    {
+      "source": "/zh/pruebas/quienes-somos",
+      "destination": "/zh/quienes-somos/",
+      "statusCode": 301
+    },
+    {
+      "source": "/zh/pruebas/quienes-somos/",
+      "destination": "/zh/quienes-somos/",
+      "statusCode": 301
+    },
+    {
+      "source": "/zh/pruebas/ayuda-y-esperanza",
+      "destination": "/zh/programas/#asistencia-social",
+      "statusCode": 301
+    },
+    {
+      "source": "/zh/pruebas/ayuda-y-esperanza/",
+      "destination": "/zh/programas/#asistencia-social",
+      "statusCode": 301
+    },
+    {
+      "source": "/zh/pruebas/voluntareado",
+      "destination": "/zh/voluntariado/",
+      "statusCode": 301
+    },
+    {
+      "source": "/zh/pruebas/voluntareado/",
+      "destination": "/zh/voluntariado/",
+      "statusCode": 301
+    },
+    {
+      "source": "/ja/actividades",
+      "destination": "/ja/actividades-bb-foundation/",
+      "statusCode": 301
+    },
+    {
+      "source": "/ja/actividades/",
+      "destination": "/ja/actividades-bb-foundation/",
+      "statusCode": 301
+    },
+    {
+      "source": "/ja/haleria",
+      "destination": "/ja/galeria/",
+      "statusCode": 301
+    },
+    {
+      "source": "/ja/haleria/",
+      "destination": "/ja/galeria/",
+      "statusCode": 301
+    },
+    {
+      "source": "/ja/voluntareado",
+      "destination": "/ja/voluntariado/",
+      "statusCode": 301
+    },
+    {
+      "source": "/ja/voluntareado/",
+      "destination": "/ja/voluntariado/",
+      "statusCode": 301
+    },
+    {
+      "source": "/ja/enterate",
+      "destination": "/ja/transparencia/",
+      "statusCode": 301
+    },
+    {
+      "source": "/ja/enterate/",
+      "destination": "/ja/transparencia/",
+      "statusCode": 301
+    },
+    {
+      "source": "/ja/orientacion",
+      "destination": "/ja/programas/#orientacion",
+      "statusCode": 301
+    },
+    {
+      "source": "/ja/orientacion/",
+      "destination": "/ja/programas/#orientacion",
+      "statusCode": 301
+    },
+    {
+      "source": "/ja/comida-infantil",
+      "destination": "/ja/programas/#asistencia-social",
+      "statusCode": 301
+    },
+    {
+      "source": "/ja/comida-infantil/",
+      "destination": "/ja/programas/#asistencia-social",
+      "statusCode": 301
+    },
+    {
+      "source": "/ja/ayuda-y-esperanza",
+      "destination": "/ja/programas/#asistencia-social",
+      "statusCode": 301
+    },
+    {
+      "source": "/ja/ayuda-y-esperanza/",
+      "destination": "/ja/programas/#asistencia-social",
+      "statusCode": 301
+    },
+    {
+      "source": "/ja/pagina-en-construccion",
+      "destination": "/ja/actividades-bb-foundation/",
+      "statusCode": 301
+    },
+    {
+      "source": "/ja/pagina-en-construccion/",
+      "destination": "/ja/actividades-bb-foundation/",
+      "statusCode": 301
+    },
+    {
+      "source": "/ja/pruebas/contacto",
+      "destination": "/ja/contacto/",
+      "statusCode": 301
+    },
+    {
+      "source": "/ja/pruebas/contacto/",
+      "destination": "/ja/contacto/",
+      "statusCode": 301
+    },
+    {
+      "source": "/ja/pruebas/quienes-somos",
+      "destination": "/ja/quienes-somos/",
+      "statusCode": 301
+    },
+    {
+      "source": "/ja/pruebas/quienes-somos/",
+      "destination": "/ja/quienes-somos/",
+      "statusCode": 301
+    },
+    {
+      "source": "/ja/pruebas/ayuda-y-esperanza",
+      "destination": "/ja/programas/#asistencia-social",
+      "statusCode": 301
+    },
+    {
+      "source": "/ja/pruebas/ayuda-y-esperanza/",
+      "destination": "/ja/programas/#asistencia-social",
+      "statusCode": 301
+    },
+    {
+      "source": "/ja/pruebas/voluntareado",
+      "destination": "/ja/voluntariado/",
+      "statusCode": 301
+    },
+    {
+      "source": "/ja/pruebas/voluntareado/",
+      "destination": "/ja/voluntariado/",
       "statusCode": 301
     },
     {

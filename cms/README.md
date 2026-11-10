@@ -60,3 +60,19 @@ Le 10 novembre 2026 : neuf tests automatisés (site et serveur), build Astro, co
 La politique Vercel de ce projet exige une signature de commit vérifiée pour les déploiements Git et les Deploy Hooks. Les livraisons destinées au bouton de publication doivent respecter cette politique ; la règle de sécurité reste activée.
 
 Pour les livraisons sans clé de signature locale, la mutation GraphQL GitHub `createCommitOnBranch` permet de créer un commit signé par GitHub avec le compte authentifié. Vérifier ensuite `commit.verification.verified` avant de lancer le Deploy Hook.
+
+## Versions linguistiques
+
+L'espagnol reste la langue principale sur les URL actuelles. Les huit éditions supplémentaires utilisent `/en/`, `/fr/`, `/de/`, `/it/`, `/ru/`, `/pt/`, `/zh/` et `/ja/` ; le portugais est brésilien et le chinois simplifié. Les noms d'institutions, dates historiques, coordonnées et documents d'origine sont conservés. Les fichiers numérisés ne sont pas remplacés par des documents traduits artificiellement.
+
+Le build commence par les pages espagnoles Astro, puis `scripts/localize-site.mjs` traduit le HTML final et les propriétés hydratées des filtres et galeries. Les textes, descriptions SEO, attributs d'accessibilité, données structurées et liens internes sont traités ensemble. Le sélecteur garde la même page lors du changement de langue. Les filtres gardent leurs identifiants stables en espagnol, avec des libellés et des compteurs localisés. Les titres à mise en forme sont traduits comme des phrases complètes.
+
+Les traductions sont enregistrées par empreinte SHA-256 du texte espagnol dans `foundation_translations`, une collection propre à Foundation. `cms/i18n/dictionary.json` conserve un instantané portable des traductions déjà disponibles ; `overrides.mjs` contient des libellés courts et des titres relus. Aucun secret n'y figure. Une modification d'un texte espagnol demande seulement la traduction du nouveau texte. Les dates complètes sont localisées avec `Intl`, en conservant le jour et l'année du récit ; un jour de semaine indiqué dans la source n'est pas corrigé silencieusement.
+
+Le Studio héberge la passerelle privée `/build/translations`. Elle exige `STUDIO_TRANSLATION_BUILD_SECRET`, refuse les lots trop longs et utilise une identité Directus limitée à la collection de traductions (`STUDIO_TRANSLATION_TOKEN`). Le fournisseur utilise le service OpenAI déjà configuré pour Bull & Bear ; aucune donnée ni identité CMS d'Academy n'est réutilisée. Les sorties JSON structurées suivent la [documentation officielle OpenAI](https://developers.openai.com/api/docs/guides/structured-outputs). Les liens, nombres et noms protégés doivent être conservés ; les valeurs mal formées sont refusées et réparées individuellement.
+
+Vercel reçoit uniquement l'URL de la passerelle et son secret de build. La clé du modèle reste dans Railway. Sans traduction complète, le build refuse la nouvelle publication : une page partiellement espagnole n'est pas livrée comme une version traduite. Si le fournisseur renvoie `credit_balance_exhausted` ou `insufficient_quota`, recharger le compte du fournisseur ou mettre à jour sa clé privée dans le service Studio, puis relancer la publication. Le site précédemment publié reste disponible.
+
+Chaque édition possède sa langue HTML, son URL canonique, ses alternatives `hreflang` et ses entrées de sitemap. L'espagnol est le `x-default`. Les liens de paiement externes Give sont conservés ; l'intégration de don n'est pas remplacée. Les photos et documents restent partagés entre les éditions.
+
+Pour les contrôles : `npm run test:i18n`, `npm run cms:test`, `npm run check`, `npm run build` et `npm test`. `npm run build:es` compile uniquement la source espagnole pour le développement ; utiliser `npm run build` avant une publication multilingue. `npm run preview` sert le résultat statique complet après un build réussi.
