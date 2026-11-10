@@ -15,6 +15,11 @@ const path=Astro.url.pathname;
  </div>
 </header>
 <script>
+ const header=document.querySelector<HTMLElement>('.site-header');
+ const updateHeader=()=>header?.classList.toggle('is-scrolled',window.scrollY>50);
+ updateHeader();
+ window.addEventListener('scroll',updateHeader,{passive:true});
+ window.addEventListener('pageshow',updateHeader);
  const button=document.querySelector<HTMLButtonElement>('.menu-toggle');
  const nav=document.querySelector<HTMLElement>('#main-navigation');
  function closeMenu(){button?.setAttribute('aria-expanded','false');nav?.classList.remove('is-open');}
@@ -24,3 +29,43 @@ const path=Astro.url.pathname;
  window.matchMedia('(min-width: 1100px)').addEventListener('change',closeMenu);
 
 </script>
+
+<style>
+ .site-header {
+  position: sticky;
+  top: 0;
+  isolation: isolate;
+  transition: background-color .22s ease, border-color .22s ease, color .22s ease;
+ }
+ :global(html:not(.js)) .site-header { position: relative; }
+ .site-header::before {
+  content: '';
+  position: absolute;
+  inset: 0 0 -50px;
+  z-index: -1;
+  background: linear-gradient(180deg, rgba(14, 31, 24, .94) 0%, rgba(14, 31, 24, .84) 52%, rgba(14, 31, 24, .42) 78%, rgba(14, 31, 24, 0) 100%);
+  opacity: 0;
+  pointer-events: none;
+  transition: opacity .22s ease;
+ }
+ .site-header.is-scrolled { background: transparent; border-bottom-color: transparent; color: #fff; }
+ .site-header.is-scrolled::before { opacity: 1; }
+ .brand { transition: filter .22s ease; }
+ .site-header.is-scrolled .brand { filter: brightness(0) invert(1); }
+ .site-header.is-scrolled .button { background: var(--lime); border-color: var(--lime); color: var(--green); }
+ .site-header.is-scrolled .button:hover { background: #e3edcf; }
+ .site-header.is-scrolled .menu-toggle span { background: #fff; }
+ .site-header.is-scrolled nav>a:not(.button)::after { background: currentColor; }
+ @media (max-width: 1099px) {
+  .site-header.is-scrolled nav { color: var(--ink); }
+  :global(html.js) .site-header nav { max-height: calc(100svh - 85px); overflow-y: auto; overscroll-behavior: contain; }
+ }
+ @media (max-width: 767px) {
+  :global(html.js) .site-header nav { max-height: calc(100svh - 80px); }
+ }
+ @media print {
+  .site-header, .site-header.is-scrolled { position: static; background: var(--ivory); color: var(--ink); }
+  .site-header::before { display: none; }
+  .site-header.is-scrolled .brand { filter: none; }
+ }
+</style>
