@@ -52,3 +52,9 @@ Variables privées du build Vercel : `DIRECTUS_URL`, `DIRECTUS_READ_TOKEN`. `PUB
 Sans `DIRECTUS_URL`, le frontend garde les contenus locaux. Les snapshots, les photos téléchargées et les miniatures sont générés et ignorés par Git. Le frontend peut être déployé avec Vercel CLI. Le Studio utilise `cms/studio/Dockerfile`. `npm run cms:deploy` régénère les miniatures, prépare un contexte isolé sans dépendances locales ni secrets puis appelle Railway CLI sur le service Foundation déclaré. Attendre le statut `SUCCESS` de Railway avant de considérer le Studio publié.
 
 Les tests du serveur couvrent la session, le refus d'origine étrangère, la persistance, les conflits de version, le décodage des images et la confirmation de publication. `scripts/studio-qa.mjs` teste dans Firefox les liens vidéo, deux uploads réels, la destination, les descriptions et les actions groupées ; il exige des identifiants via variables d'environnement et consigne uniquement les identifiants temporaires à nettoyer.
+
+## Recette de livraison
+
+Le 10 novembre 2026 : neuf tests automatisés (site et serveur), build Astro, contrôle TypeScript et recette Firefox de 360 à 1 440 px. Une vidéo par lien `www.`, deux uploads réels, les descriptions et les actions groupées ont été vérifiés dans le Studio en ligne. Un build relié au CMS a aussi généré une photo téléversée, un lecteur vidéo et une nouvelle activité à URL lisible. Les fiches, fichiers et comptes de recette sont supprimés après vérification.
+
+La politique Vercel de ce projet exige une signature de commit vérifiée pour les déploiements Git et les Deploy Hooks. Les livraisons destinées au bouton de publication doivent respecter cette politique ; la règle de sécurité reste activée.
