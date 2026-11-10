@@ -47,3 +47,17 @@ Mesures de laboratoire sur le build statique servi à localhost, le 10 novembre 
 | donation | 99 | 100 | 100 | 69 | 2.2 s | 0 |
 
 Le score SEO 69 est expliqué par le noindex et l'interdiction de crawl de la préproduction. Ils sont intentionnels et sont conservés. Aucun défaut de contraste détecté dans ces trois mesures finales. Les rapports HTML complets se trouvent dans artifacts/lighthouse/ et le résumé dans migration/reports/lighthouse-local.json.
+
+## Déploiement vérifié
+
+Préproduction : https://bullbear-foundation-preview.vercel.app/
+
+Déploiement Vercel de la révision applicative c577cec, réalisé par la CLI et contrôlé le 2026-11-10T07:41:00.470Z. Le WordPress public et ses DNS sont conservés.
+
+- 78 routes HTML hors page 404 : HTTP 200, noindex dans le HTML et dans l'en-tête HTTP.
+- 12 mappings historiques : HTTP 301 directement, avec et sans barre finale ; destinations HTTP 200, sans chaîne intermédiaire.
+- 6 anciennes URL de médias testées en ligne, dont un nom accentué : HTTP 301 puis image HTTP 200. Les 1 115 destinations sont contrôlées localement par les tests.
+- URL inconnue : HTTP 404 ; robots.txt bloque le crawl ; sitemap disponible en HTTP 200.
+- Site ouvert explicitement dans Firefox.
+
+Résultats détaillés : migration/reports/deployment.json. Les changements finaux de documentation n'altèrent pas le build applicatif vérifié.

@@ -1,0 +1,512 @@
+{
+  "checkedAt": "2026-11-10T07:41:00.470Z",
+  "base": "https://bullbear-foundation-preview.vercel.app",
+  "passed": true,
+  "routes": [
+    {
+      "route": "/",
+      "status": 200,
+      "noindex": true
+    },
+    {
+      "route": "/actividades-bb-foundation/",
+      "status": 200,
+      "noindex": true
+    },
+    {
+      "route": "/aplicacion-de-primer-examen-simulacro-para-comipems-festejo-del-dia-del-nino-y-de-la-nina/",
+      "status": 200,
+      "noindex": true
+    },
+    {
+      "route": "/asilo-arbo-de-vida/",
+      "status": 200,
+      "noindex": true
+    },
+    {
+      "route": "/aviso-de-privacidad/",
+      "status": 200,
+      "noindex": true
+    },
+    {
+      "route": "/calendario-de-actividades-2024/",
+      "status": 200,
+      "noindex": true
+    },
+    {
+      "route": "/canciones-para-recordar-fraternidad-sin-fronteras/",
+      "status": 200,
+      "noindex": true
+    },
+    {
+      "route": "/cierre-de-actividades-de-ingles-basico/",
+      "status": 200,
+      "noindex": true
+    },
+    {
+      "route": "/cierre-de-clases/",
+      "status": 200,
+      "noindex": true
+    },
+    {
+      "route": "/clases-de-matematicas/",
+      "status": 200,
+      "noindex": true
+    },
+    {
+      "route": "/como-ayudar/",
+      "status": 200,
+      "noindex": true
+    },
+    {
+      "route": "/conmemorando-el-dia-contra-el-trabajo-infantil/",
+      "status": 200,
+      "noindex": true
+    },
+    {
+      "route": "/conmemorando-el-dia-internacional-de-la-mujer-en-la-alcaldia-cuajimalpa/",
+      "status": 200,
+      "noindex": true
+    },
+    {
+      "route": "/contacto/",
+      "status": 200,
+      "noindex": true
+    },
+    {
+      "route": "/convivio-festejando-a-un-nino-freda-frick/",
+      "status": 200,
+      "noindex": true
+    },
+    {
+      "route": "/cuidando-durante-el-covid19/",
+      "status": 200,
+      "noindex": true
+    },
+    {
+      "route": "/cultura-guerrero-tradicional/",
+      "status": 200,
+      "noindex": true
+    },
+    {
+      "route": "/donar-ahora/",
+      "status": 200,
+      "noindex": true
+    },
+    {
+      "route": "/entrega-de-detalles-navidenos-2023-2/",
+      "status": 200,
+      "noindex": true
+    },
+    {
+      "route": "/feria-informativa-tec-de-monterrey/",
+      "status": 200,
+      "noindex": true
+    },
+    {
+      "route": "/festividad-de-dia-de-muertos-en-fundacion-dar-y-amar-daya/",
+      "status": 200,
+      "noindex": true
+    },
+    {
+      "route": "/festividad-de-la-celebracion-de-dia-de-muertos/",
+      "status": 200,
+      "noindex": true
+    },
+    {
+      "route": "/galeria/",
+      "status": 200,
+      "noindex": true
+    },
+    {
+      "route": "/ko-bullying-ines-maria-gasca/",
+      "status": 200,
+      "noindex": true
+    },
+    {
+      "route": "/las-noticias-agosto-2023/",
+      "status": 200,
+      "noindex": true
+    },
+    {
+      "route": "/los-valores-ines-maria-gasca/",
+      "status": 200,
+      "noindex": true
+    },
+    {
+      "route": "/nocaut-al-bullying/",
+      "status": 200,
+      "noindex": true
+    },
+    {
+      "route": "/participar-en-eventos-junio-2025/",
+      "status": 200,
+      "noindex": true
+    },
+    {
+      "route": "/programas/",
+      "status": 200,
+      "noindex": true
+    },
+    {
+      "route": "/que-es-el-arte-que-es-un-amigo-fraternidad-sin-frontreras/",
+      "status": 200,
+      "noindex": true
+    },
+    {
+      "route": "/que-es-leer-y-el-valor-del-respeto-hogar-dulce-hogar-canciones-para-recordar-fraternidad-sin-fronteras/",
+      "status": 200,
+      "noindex": true
+    },
+    {
+      "route": "/quienes-somos/",
+      "status": 200,
+      "noindex": true
+    },
+    {
+      "route": "/resumen-de-actividades-diciembre/",
+      "status": 200,
+      "noindex": true
+    },
+    {
+      "route": "/resumen-de-actividades-foundation-2023/",
+      "status": 200,
+      "noindex": true
+    },
+    {
+      "route": "/resumen-de-actividades-foundation-febrero-2024/",
+      "status": 200,
+      "noindex": true
+    },
+    {
+      "route": "/resumen-de-actividades-foundation-junio-2024/",
+      "status": 200,
+      "noindex": true
+    },
+    {
+      "route": "/resumen-de-actividades-foundation-marzo-2024/",
+      "status": 200,
+      "noindex": true
+    },
+    {
+      "route": "/resumen-de-actividades-foundation-mayo-2024/",
+      "status": 200,
+      "noindex": true
+    },
+    {
+      "route": "/resumen-de-actividades-foundation-octubre-2024/",
+      "status": 200,
+      "noindex": true
+    },
+    {
+      "route": "/resumen-de-actividades-noviembre/",
+      "status": 200,
+      "noindex": true
+    },
+    {
+      "route": "/resumen-de-actividades-octubre/",
+      "status": 200,
+      "noindex": true
+    },
+    {
+      "route": "/semana-con-el-instituto-tecnologico-y-de-estudios-superiores-de-monterrey-campus-ciudad-de-mexico-mayo/",
+      "status": 200,
+      "noindex": true
+    },
+    {
+      "route": "/sensibilizacion-hacia-el-bullying-primaria/",
+      "status": 200,
+      "noindex": true
+    },
+    {
+      "route": "/taller-cuentos-mexicanos-dia-internacional-del-libro-yolia/",
+      "status": 200,
+      "noindex": true
+    },
+    {
+      "route": "/taller-de-empatia-el-valor-de-la-familia-la-amistad-y-las-tradiciones/",
+      "status": 200,
+      "noindex": true
+    },
+    {
+      "route": "/taller-de-empatia-tapete-de-movimiento/",
+      "status": 200,
+      "noindex": true
+    },
+    {
+      "route": "/taller-de-empatia-visitiendo-a-mi-calaverita/",
+      "status": 200,
+      "noindex": true
+    },
+    {
+      "route": "/taller-de-empatia-y-manualidades-mi-calaverita/",
+      "status": 200,
+      "noindex": true
+    },
+    {
+      "route": "/taller-de-ingles-preparandonos-para-la-navidad/",
+      "status": 200,
+      "noindex": true
+    },
+    {
+      "route": "/taller-de-ingles-vocabulario-navideno/",
+      "status": 200,
+      "noindex": true
+    },
+    {
+      "route": "/taller-de-lectura-el-mounstro-de-colores-las-emociones-fraternidad/",
+      "status": 200,
+      "noindex": true
+    },
+    {
+      "route": "/taller-de-lectura-el-principito-y-biografia-de-saint-exupery-una-vida-de-aventuras-por-el-aire-y-las-letras/",
+      "status": 200,
+      "noindex": true
+    },
+    {
+      "route": "/taller-de-lectura-la-biografia-de-ana-frank/",
+      "status": 200,
+      "noindex": true
+    },
+    {
+      "route": "/taller-de-lectura-los-mitos-del-amor-en-la-adolescencia/",
+      "status": 200,
+      "noindex": true
+    },
+    {
+      "route": "/taller-de-lectura-presentacion-del-libro-locura/",
+      "status": 200,
+      "noindex": true
+    },
+    {
+      "route": "/taller-empatia-y-destreza/",
+      "status": 200,
+      "noindex": true
+    },
+    {
+      "route": "/taller-expresion-de-emociones/",
+      "status": 200,
+      "noindex": true
+    },
+    {
+      "route": "/taller-la-rueda-de-las-emociones/",
+      "status": 200,
+      "noindex": true
+    },
+    {
+      "route": "/taller-promoviendo-la-lectura-club-de-lectura-mental-morfosis-del-autor-franz-de-paula/",
+      "status": 200,
+      "noindex": true
+    },
+    {
+      "route": "/taller-promoviendo-la-lectura-club-de-lectura-mental-morfosis/",
+      "status": 200,
+      "noindex": true
+    },
+    {
+      "route": "/taller-que-es-leer-activando-la-imaginacion/",
+      "status": 200,
+      "noindex": true
+    },
+    {
+      "route": "/taller-que-es-una-leyenda-que-es-un-mito-y-el-diseno-de-una-calaverita/",
+      "status": 200,
+      "noindex": true
+    },
+    {
+      "route": "/tallerde-empatia-quien-soy-yo-auto-concepto-autoestima/",
+      "status": 200,
+      "noindex": true
+    },
+    {
+      "route": "/talleres-de-empatia-en-fundacion-fraternidad-sin-fronteras-2/",
+      "status": 200,
+      "noindex": true
+    },
+    {
+      "route": "/talleres-de-empatia-en-fundacion-fraternidad-sin-fronteras-febrero/",
+      "status": 200,
+      "noindex": true
+    },
+    {
+      "route": "/talleres-de-empatia-en-fundacion-fraternidad-sin-fronteras-junio/",
+      "status": 200,
+      "noindex": true
+    },
+    {
+      "route": "/talleres-de-empatia-en-fundacion-fraternidad-sin-fronteras-mayo/",
+      "status": 200,
+      "noindex": true
+    },
+    {
+      "route": "/talleres-en-casa-hogar-de-adultos-mayores/",
+      "status": 200,
+      "noindex": true
+    },
+    {
+      "route": "/talleres-en-casa-hogar-dif-azcapotzalco-de-adultos-mayores-junio/",
+      "status": 200,
+      "noindex": true
+    },
+    {
+      "route": "/talleres-en-casa-hogar-dif-azcapotzalco-de-adultos-mayores-mayo/",
+      "status": 200,
+      "noindex": true
+    },
+    {
+      "route": "/talleres-en-casa-hogar-dif-azcapotzalco-de-adultos-mayores/",
+      "status": 200,
+      "noindex": true
+    },
+    {
+      "route": "/talleres-en-casa-refugiados-a-c/",
+      "status": 200,
+      "noindex": true
+    },
+    {
+      "route": "/talleres-en-comunidad-moss-i-a-p/",
+      "status": 200,
+      "noindex": true
+    },
+    {
+      "route": "/talleres-para-ninas-albergue-ines-maria-octubre/",
+      "status": 200,
+      "noindex": true
+    },
+    {
+      "route": "/talleres-para-ninas-mayo/",
+      "status": 200,
+      "noindex": true
+    },
+    {
+      "route": "/transparencia/",
+      "status": 200,
+      "noindex": true
+    },
+    {
+      "route": "/voluntariado-xochicalco/",
+      "status": 200,
+      "noindex": true
+    },
+    {
+      "route": "/voluntariado/",
+      "status": 200,
+      "noindex": true
+    }
+  ],
+  "redirects": [
+    {
+      "source": "/actividades/",
+      "status": 301,
+      "location": "/actividades-bb-foundation/",
+      "withoutTrailingSlash": 301
+    },
+    {
+      "source": "/haleria/",
+      "status": 301,
+      "location": "/galeria/",
+      "withoutTrailingSlash": 301
+    },
+    {
+      "source": "/voluntareado/",
+      "status": 301,
+      "location": "/voluntariado/",
+      "withoutTrailingSlash": 301
+    },
+    {
+      "source": "/enterate/",
+      "status": 301,
+      "location": "/transparencia/",
+      "withoutTrailingSlash": 301
+    },
+    {
+      "source": "/orientacion/",
+      "status": 301,
+      "location": "/programas/#orientacion",
+      "withoutTrailingSlash": 301
+    },
+    {
+      "source": "/comida-infantil/",
+      "status": 301,
+      "location": "/programas/#asistencia-social",
+      "withoutTrailingSlash": 301
+    },
+    {
+      "source": "/ayuda-y-esperanza/",
+      "status": 301,
+      "location": "/programas/#asistencia-social",
+      "withoutTrailingSlash": 301
+    },
+    {
+      "source": "/pagina-en-construccion/",
+      "status": 301,
+      "location": "/actividades-bb-foundation/",
+      "withoutTrailingSlash": 301
+    },
+    {
+      "source": "/pruebas/contacto/",
+      "status": 301,
+      "location": "/contacto/",
+      "withoutTrailingSlash": 301
+    },
+    {
+      "source": "/pruebas/quienes-somos/",
+      "status": 301,
+      "location": "/quienes-somos/",
+      "withoutTrailingSlash": 301
+    },
+    {
+      "source": "/pruebas/ayuda-y-esperanza/",
+      "status": 301,
+      "location": "/programas/#asistencia-social",
+      "withoutTrailingSlash": 301
+    },
+    {
+      "source": "/pruebas/voluntareado/",
+      "status": 301,
+      "location": "/voluntariado/",
+      "withoutTrailingSlash": 301
+    }
+  ],
+  "legacyMedia": [
+    {
+      "source": "/wp-content/uploads/2023/09/cropped-BB-Fundation-Logotipo-1.png",
+      "status": 301,
+      "destination": "/_astro/b5ffcf99e4-cropped-BB-Fundation-Logotipo-1.y9XEhpxy_1SXCM1.webp",
+      "targetStatus": 200
+    },
+    {
+      "source": "/wp-content/uploads/2025/02/2b4e8530-08fa-4ffe-bf84-1baae7a4f52f-2.jpg",
+      "status": 301,
+      "destination": "/_astro/c65f8927ba-2b4e8530-08fa-4ffe-bf84-1baae7a4f52f-2.DYvoNhr3.jpg",
+      "targetStatus": 200
+    },
+    {
+      "source": "/wp-content/uploads/2024/06/CONSTANCIA-INDESOL-ACREDITACION-ACTIVIDADES-791x1024.jpg",
+      "status": 301,
+      "destination": "/_astro/2aa57e0244-CONSTANCIA-INDESOL-ACREDITACION-ACTIVIDADES-791x1024.DImayBSG.jpg",
+      "targetStatus": 200
+    },
+    {
+      "source": "/wp-content/uploads/2023/12/Imagen11.jpg",
+      "status": 301,
+      "destination": "/_astro/9e37723e44-Imagen11.BEuT4X4-_Zm8aGz.webp",
+      "targetStatus": 200
+    },
+    {
+      "source": "/wp-content/uploads/2024/08/Imagen6.png",
+      "status": 301,
+      "destination": "/medios/a2a908cbd1-Imagen6-300x300.png",
+      "targetStatus": 200
+    },
+    {
+      "source": "/wp-content/uploads/2023/11/Taller-de-empatia-%C2%BFQuien-soy-yo-Auto-concepto-Autoestima2.jpg",
+      "status": 301,
+      "destination": "/_astro/0e0c94dbaa-Taller-de-empatia-%C2%BFQuien-soy-yo-Auto-concepto-Autoestima2.dpZADiQK_Z1QPFK2.webp",
+      "targetStatus": 200
+    }
+  ],
+  "unknownRoute": 404,
+  "robots": "Disallow: /",
+  "sitemap": 200
+}
