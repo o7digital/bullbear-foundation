@@ -1,4 +1,62 @@
 ---
-import Layout from '../layouts/Layout.astro';import PageIntro from '../components/PageIntro.astro';import legal from '../data/privacy.html?raw';
+import { getImage } from 'astro:assets';
+import Layout from '../layouts/Layout.astro';
+import PageIntro from '../components/PageIntro.astro';
+import { media, logo } from '../data/media';
+import legal from '../data/privacy.html?raw';
+const watermark = await getImage({src:media(logo),width:800,format:'webp',quality:90});
 ---
-<Layout title="Aviso de privacidad | Fundación Bull & Bear" description="Consulta el aviso de privacidad publicado por Fundación Bull & Bear y el contacto para ejercer los derechos de acceso, rectificación, cancelación y oposición."><PageIntro eyebrow="Aviso de privacidad" title="El cuidado también<br/>está en <em>tus datos.</em>"/><div class="container page-body"><article class="prose legal-copy" set:html={legal}/></div></Layout>
+<Layout title="Aviso de privacidad | Fundación Bull & Bear" description="Consulta el aviso de privacidad publicado por Fundación Bull & Bear y el contacto para ejercer los derechos de acceso, rectificación, cancelación y oposición.">
+  <section class="privacy-page" style={`--privacy-watermark:url("${watermark.src}")`}>
+    <PageIntro eyebrow="Aviso de privacidad" title="El cuidado también<br/>está en <em>tus datos.</em>"/>
+    <div class="container page-body privacy-content"><article class="prose legal-copy" set:html={legal}/></div>
+  </section>
+</Layout>
+<style>
+  .privacy-page {
+    position: relative;
+    isolation: isolate;
+    /* Keep the viewport-fixed watermark inside the legal page, clear of the footer. */
+    clip-path: inset(0);
+    background: var(--ivory);
+  }
+  .privacy-page::before {
+    content: '';
+    position: fixed;
+    inset: 0;
+    z-index: -1;
+    background-image: var(--privacy-watermark);
+    background-repeat: no-repeat;
+    background-position: center 42%;
+    background-size: min(86vw, 1380px) auto;
+    filter: grayscale(1) brightness(0);
+    opacity: .085;
+    pointer-events: none;
+  }
+  .privacy-content { padding-top: 12px; padding-bottom: 100px; }
+  .privacy-content .legal-copy {
+    max-width: 900px;
+    margin-inline: auto;
+    font-size: 1.0625rem;
+    line-height: 1.95;
+    color: var(--ink);
+    overflow-wrap: anywhere;
+  }
+  .privacy-content :global(.legal-copy p) { margin-bottom: 28px; }
+  .privacy-content :global(.legal-copy h4) {
+    margin: 0 0 18px;
+    font-size: 1.15rem;
+    line-height: 1.5;
+  }
+  .privacy-content :global(.legal-copy > h4 + br) { display: none; }
+  @media (max-width: 767px) {
+    .privacy-page::before { background-size: 112vw auto; background-position: center 38%; opacity: .075; }
+    .privacy-content { padding-top: 0; padding-bottom: 64px; }
+    .privacy-content .legal-copy { font-size: 1rem; line-height: 1.85; }
+    .privacy-content :global(.legal-copy p) { margin-bottom: 24px; }
+  }
+  @media print {
+    .privacy-page { clip-path: none; }
+    .privacy-page::before { display: none; }
+  }
+</style>
