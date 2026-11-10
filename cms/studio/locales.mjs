@@ -1,0 +1,4 @@
+export const languages={es:{name:'Español',tag:'es-MX',og:'es_MX'},en:{name:'English',tag:'en',og:'en_US'},fr:{name:'Français',tag:'fr',og:'fr_FR'},de:{name:'Deutsch',tag:'de',og:'de_DE'},it:{name:'Italiano',tag:'it',og:'it_IT'},ru:{name:'Русский',tag:'ru',og:'ru_RU'},pt:{name:'Português',tag:'pt-BR',og:'pt_BR'},zh:{name:'简体中文',tag:'zh-Hans',og:'zh_CN'},ja:{name:'日本語',tag:'ja',og:'ja_JP'}};
+export const targetLocales=Object.keys(languages).filter(locale=>locale!=='es');
+export function sourcePath(pathname){return pathname.replace(/^\/(?:en|fr|de|it|ru|pt|zh|ja|es)(?=\/|$)/,'')||'/';}
+export function localizedPath(pathname,locale){const path=sourcePath(pathname);if(path==='/404/')return(locale==='es'?'':'/'+locale)+'/404.html';return locale==='es'?path:'/'+locale+(path.startsWith('/')?path:'/'+path);}

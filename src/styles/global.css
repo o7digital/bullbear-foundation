@@ -24,3 +24,7 @@
 @media(max-width:767px){.activity-card--text{padding:23px}.activity-card--text h3{font-size:1.4rem}}
 .activity-card{min-width:0}
 .activity-card h3 a,.activity-card>p{overflow-wrap:anywhere}
+/* Script-aware type and wrapping for the translated editions. */
+html:not([lang^=es]) h1,html:not([lang^=es]) h2,html:not([lang^=es]) h3{overflow-wrap:anywhere;hyphens:auto}
+html[lang^=zh],html[lang^=ja]{--sans:'PingFang SC','Hiragino Kaku Gothic ProN','Microsoft YaHei',Arial,sans-serif;--serif:'Songti SC','Hiragino Mincho ProN',Georgia,serif;line-break:strict}
+html[lang^=zh] h1,html[lang^=zh] h2,html[lang^=ja] h1,html[lang^=ja] h2{letter-spacing:0;line-height:1.35}

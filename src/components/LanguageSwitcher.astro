@@ -1,0 +1,24 @@
+---
+import {languages,localizedPath} from '../../cms/studio/locales.mjs';
+const path=Astro.url.pathname;
+---
+<details class="language-switcher" data-language-switcher>
+ <summary aria-label="Seleccionar idioma"><span data-language-code>ES</span><svg width="12" height="12" viewBox="0 0 12 12" fill="none" aria-hidden="true"><path d="m3 4.5 3 3 3-3" stroke="currentColor" stroke-width="1.5"/></svg></summary>
+ <div class="language-menu" role="group" aria-label="Idioma del sitio">{Object.entries(languages).map(([locale,language])=><a data-language-link={locale} href={localizedPath(path,locale)} lang={language.tag} hreflang={language.tag} aria-current={locale==='es'?'true':undefined}>{language.name}<span aria-hidden="true">{locale==='es'?'✓':''}</span></a>)}</div>
+</details>
+<script>
+ document.querySelectorAll<HTMLDetailsElement>('[data-language-switcher]').forEach(menu=>{
+  menu.addEventListener('keydown',event=>{if(event.key==='Escape'){menu.open=false;menu.querySelector('summary')?.focus();}});
+  document.addEventListener('click',event=>{if(event.target instanceof Node&&!menu.contains(event.target))menu.open=false;});
+  menu.querySelectorAll<HTMLAnchorElement>('[data-language-link]').forEach(link=>link.addEventListener('click',()=>{const url=new URL(link.href);url.search=location.search;url.hash=location.hash;link.href=url.href;}));
+ });
+</script>
+<style>
+ .language-switcher{position:relative;flex:none;font-size:.9rem;font-weight:600;}
+ summary{display:flex;align-items:center;justify-content:center;gap:8px;min-height:44px;min-width:54px;cursor:pointer;list-style:none;border:1px solid currentColor;border-radius:3px;padding:7px 10px;}
+ summary::-webkit-details-marker{display:none;}
+ .language-menu{position:absolute;top:calc(100% + 12px);right:0;min-width:180px;max-height:calc(100svh - 125px);overflow:auto;padding:8px;background:var(--ivory);color:var(--ink);border:1px solid var(--line);box-shadow:0 10px 32px #142a2222;border-radius:5px;}
+ .language-menu a{display:flex;align-items:center;justify-content:space-between;gap:20px;min-height:40px;padding:8px 13px;white-space:nowrap;}
+ .language-menu a:hover,.language-menu a[aria-current=true]{background:#e7eddc;}
+ @media(max-width:767px){summary{min-width:51px;padding-inline:8px}.language-switcher{font-size:.85rem;}}
+</style>
