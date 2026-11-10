@@ -1,0 +1,122 @@
+{
+  "language": "es-MX",
+  "status": "Base éditoriale condensée, non intégrale. Reformulations à valider après import. Ne pas assimiler à un export WordPress.",
+  "organization": {
+    "name": "Bull & Bear Foundation",
+    "display_legal_name_from_site": "Fundación Bull&Bear A.C.",
+    "source": "https://www.bullandbear-foundation.com/quienes-somos/",
+    "founded_year_from_site": 2016,
+    "summary_proposed": "Una fundación que acompaña a personas en situación de vulnerabilidad mediante iniciativas de apoyo social y participación comunitaria.",
+    "mission_proposed": "Contribuir al bienestar de grupos vulnerables a través de acciones solidarias cercanas a sus necesidades.",
+    "vision_proposed": "Consolidar una fundación capaz de desarrollar proyectos de contribución social de mayor alcance.",
+    "values_from_site": [
+      "Servicio",
+      "Compromiso",
+      "Solidaridad",
+      "Proximidad",
+      "Humanismo",
+      "Honestidad"
+    ],
+    "leadership_from_site": [
+      {
+        "name": "Carlos Reyes",
+        "role": "Presidente",
+        "current_role_verification": "pendiente"
+      },
+      {
+        "name": "Rodrigo Pérez",
+        "role": "Secretario",
+        "current_role_verification": "pendiente"
+      }
+    ]
+  },
+  "contact": {
+    "source": "https://www.bullandbear-foundation.com/contacto/",
+    "phone": "+52 55 3688 8077",
+    "email": "contacto@bullandbear-foundation.com",
+    "address": "Av. Insurgentes Sur 716, piso 8, ala poniente, Col. Del Valle, C.P. 03103, Benito Juárez, Ciudad de México.",
+    "mailto": "mailto:contacto@bullandbear-foundation.com",
+    "tel": "tel:+525536888077"
+  },
+  "programs": {
+    "source": "https://www.bullandbear-foundation.com/",
+    "items": [
+      {
+        "name": "Asistencia social",
+        "summary_proposed": "Recolección y entrega de insumos para atender necesidades básicas en casas hogar, residencias y asilos."
+      },
+      {
+        "name": "Orientación social",
+        "summary_proposed": "Talleres de convivencia, empatía, educación financiera, emprendimiento y conciencia social."
+      },
+      {
+        "name": "Voluntariado",
+        "summary_proposed": "Participación en actividades de acompañamiento y ayuda en instituciones que atienden a personas vulnerables."
+      },
+      {
+        "name": "Acciones comunitarias y ambientales",
+        "summary_proposed": "Iniciativas de recolección de plástico y sensibilización comunitaria; confirmar alianzas y campañas vigentes."
+      }
+    ]
+  },
+  "campaigns": [
+    {
+      "name_from_site": "Contigo en cada paso",
+      "source": "https://www.bullandbear-foundation.com/",
+      "partner_from_site": "Fundación Bringas-Haghenbeck I.A.P.",
+      "beneficiary_from_site": "Residencia Teodoro Gildred",
+      "purpose_summary": "Reunir artículos de higiene personal para personas mayores.",
+      "date_label_from_site": "Del 1 de junio al 31 de julio",
+      "year": null,
+      "publish_as_active": false,
+      "reason": "Año y vigencia sin confirmar."
+    }
+  ],
+  "transparency": {
+    "source": "https://www.bullandbear-foundation.com/transparencia/",
+    "public_document": "Image d’accusé SAT repérée dans le manifeste des médias.",
+    "current_authorized_donation_status": "Non vérifié",
+    "action": "Obtenir le document original, sa date et sa validité avant toute affirmation actuelle."
+  },
+  "donations": {
+    "source": "https://www.bullandbear-foundation.com/donar-ahora/",
+    "existing_provider": "Give + Stripe",
+    "amounts_observed": [
+      10,
+      50,
+      100,
+      150,
+      200
+    ],
+    "custom_amount_observed": true,
+    "currency": null,
+    "currency_status": "Symbole $ visible ; devise non confirmée.",
+    "end_to_end_tested": false
+  },
+  "social": [
+    {
+      "platform": "Facebook",
+      "url": "https://www.facebook.com/bullandbearfoundation"
+    },
+    {
+      "platform": "Instagram",
+      "url": "https://www.instagram.com/bullbearfoundation/"
+    },
+    {
+      "platform": "YouTube",
+      "url": "https://www.youtube.com/channel/UCvHyVLlBmyLkjAdrdPzyKww"
+    }
+  ],
+  "partner_link_from_site": {
+    "name": "Brazos de Ayuda",
+    "url": "https://cuxeya.org/",
+    "relationship_verification": "à confirmer"
+  },
+  "editorial_rejections": [
+    "Lorem ipsum",
+    "Menus et pages de démonstration du thème",
+    "Services new-yorkais non reliés à une activité confirmée",
+    "Statistiques sans période et source vérifiées",
+    "Campagnes anciennes présentées comme actives"
+  ]
+}

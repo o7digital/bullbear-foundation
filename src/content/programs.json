@@ -1,0 +1,50 @@
+[
+  {
+    "sourceUrl": "https://www.bullandbear-foundation.com/",
+    "publishedAt": null,
+    "modifiedAt": null,
+    "validation": "verified-source",
+    "id": "asistencia-social",
+    "title": "Asistencia social",
+    "number": "01",
+    "summary": "Apoyo cercano para atender necesidades básicas y acompañar a quienes más lo necesitan.",
+    "body": "Reunimos y entregamos insumos para apoyar a personas en casas hogar, residencias y asilos. La escucha y el contacto con cada institución nos permiten orientar la ayuda hacia sus necesidades.",
+    "image": "fc7246eafb-abuelitos-03-1024x1024-1.png"
+  },
+  {
+    "sourceUrl": "https://www.bullandbear-foundation.com/orientacion/",
+    "publishedAt": null,
+    "modifiedAt": null,
+    "validation": "verified-source",
+    "id": "orientacion",
+    "title": "Orientación y talleres",
+    "number": "02",
+    "summary": "Espacios para aprender, expresarse y compartir herramientas para la vida.",
+    "body": "Promovemos talleres de lectura, educación financiera, valores, empatía y expresión artística. Cada actividad invita a aprender, convivir y reconocer las capacidades de las personas participantes.",
+    "image": "064b39e228-WhatsApp-Image-2023-05-23-at-17.14.41-1-1-1024x682.jpeg"
+  },
+  {
+    "sourceUrl": "https://www.bullandbear-foundation.com/voluntareado/",
+    "publishedAt": null,
+    "modifiedAt": null,
+    "validation": "verified-source",
+    "id": "voluntariado",
+    "title": "Voluntariado",
+    "number": "03",
+    "summary": "Personas que comparten su tiempo y sus habilidades para construir comunidad.",
+    "body": "El voluntariado sostiene los encuentros y las actividades de acompañamiento. Invitamos a las personas a acercarse, compartir sus habilidades y coordinar su participación con el equipo de la fundación.",
+    "image": "2d66b247a1-IMG_7729-2-scaled.jpg"
+  },
+  {
+    "sourceUrl": "https://www.bullandbear-foundation.com/donar-ahora/",
+    "publishedAt": null,
+    "modifiedAt": null,
+    "validation": "verified-source",
+    "id": "comunidad",
+    "title": "Comunidad y entorno",
+    "number": "04",
+    "summary": "Acciones compartidas para cuidar nuestros vínculos y el lugar que habitamos.",
+    "body": "El archivo de la fundación recoge acciones comunitarias y de recolección de plástico. Para conocer las campañas y las posibilidades actuales de participación, ponte en contacto con nuestro equipo.",
+    "image": "0bc5bdccb7-284a0e55-4d3c-48a1-b22b-60c2ba55a0f0-2.jpg"
+  }
+]

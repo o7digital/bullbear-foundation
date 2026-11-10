@@ -1,0 +1,6 @@
+---
+import {getImage} from 'astro:assets';import Gallery from './Gallery';import {media} from '../data/media';
+const {files,title}=Astro.props as {files:string[];title:string};
+const photos=await Promise.all(files.map(async(file,i)=>{const asset=media(file);const image=await getImage({src:asset,width:Math.min(1200,asset.width),format:'webp',quality:80});return {src:image.src,alt:`${title} — fotografía ${i+1} del archivo`,width:Number(image.attributes.width),height:Number(image.attributes.height)};}));
+---
+<Gallery client:visible photos={photos}/>

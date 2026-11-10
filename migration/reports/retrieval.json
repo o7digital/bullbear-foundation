@@ -1,0 +1,22 @@
+[
+  {
+    "url": "https://www.bullandbear-foundation.com/wp-json/wp/v2/pages?per_page=100&page=1",
+    "error": "HTTP Error 406: Not Acceptable"
+  },
+  {
+    "url": "https://www.bullandbear-foundation.com/wp-json/wp/v2/categories?per_page=100&page=1",
+    "error": "HTTP Error 406: Not Acceptable"
+  },
+  {
+    "url": "https://www.bullandbear-foundation.com/robots.txt",
+    "error": "HTTP Error 406: Not Acceptable"
+  },
+  {
+    "url": "https://www.bullandbear-foundation.com/wp-sitemap.xml",
+    "error": "HTTP Error 406: Not Acceptable"
+  },
+  {
+    "url": "https://www.bullandbear-foundation.com/donar-ahora/",
+    "error": "HTTP Error 406: Not Acceptable"
+  }
+]

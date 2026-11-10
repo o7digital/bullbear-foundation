@@ -1,0 +1,34 @@
+{
+  "originals": "migration/raw/",
+  "reason": "Original HTML retained before editorial changes",
+  "rules": [
+    {
+      "match": "Lorem ipsum, unrelated English paragraphs, New York/Bronx/Manhattan, theme sample menus and partner icons",
+      "decision": "Excluded from published pages; preserved in original HTML and post records"
+    },
+    {
+      "match": "Homepage duplicated blocks and zero counters",
+      "decision": "Deduplicated; counters omitted because definitions and periods are not verified"
+    },
+    {
+      "match": "Contigo en cada paso",
+      "decision": "Archived in home.html; year and ongoing status not confirmed, not shown as active"
+    },
+    {
+      "match": "COVID Puertas Rojas and generic service promises",
+      "decision": "Retained a historical context page without presenting template-like services as current"
+    },
+    {
+      "match": "Broken Ver evento links (http://¢) in June 2025 agenda",
+      "decision": "Removed; dates retained as historical scheduling, not proof of delivery"
+    },
+    {
+      "match": "January and July 2024 labels with no usable link",
+      "decision": "Not turned into fabricated activities"
+    },
+    {
+      "match": "Privacy page embedded signup/volunteering form after notice",
+      "decision": "Notice wording retained; unrelated form and volunteering blocks omitted"
+    }
+  ]
+}

@@ -1,0 +1,686 @@
+[
+  {
+    "source": "/",
+    "destination": "/",
+    "status": 200,
+    "action": "preserve",
+    "bodyRecovered": true,
+    "reason": "Retained historical or institutional route"
+  },
+  {
+    "source": "/actividades-bb-foundation/",
+    "destination": "/actividades-bb-foundation/",
+    "status": 200,
+    "action": "preserve",
+    "bodyRecovered": true,
+    "reason": "Retained historical or institutional route"
+  },
+  {
+    "source": "/actividades/",
+    "destination": "/actividades-bb-foundation/",
+    "status": 301,
+    "reason": "Consolidación del índice duplicado",
+    "action": "redirect"
+  },
+  {
+    "source": "/aplicacion-de-primer-examen-simulacro-para-comipems-festejo-del-dia-del-nino-y-de-la-nina/",
+    "destination": "/aplicacion-de-primer-examen-simulacro-para-comipems-festejo-del-dia-del-nino-y-de-la-nina/",
+    "status": 200,
+    "action": "preserve",
+    "bodyRecovered": true,
+    "reason": "Retained historical or institutional route"
+  },
+  {
+    "source": "/asilo-arbo-de-vida/",
+    "destination": "/asilo-arbo-de-vida/",
+    "status": 200,
+    "action": "preserve",
+    "bodyRecovered": true,
+    "reason": "Retained historical or institutional route"
+  },
+  {
+    "source": "/aviso-de-privacidad/",
+    "destination": "/aviso-de-privacidad/",
+    "status": 200,
+    "action": "preserve",
+    "bodyRecovered": true,
+    "reason": "Retained historical or institutional route"
+  },
+  {
+    "source": "/ayuda-y-esperanza/",
+    "destination": "/programas/#asistencia-social",
+    "status": 301,
+    "reason": "Consolidación de asistencia social",
+    "action": "redirect"
+  },
+  {
+    "source": "/calendario-de-actividades-2024/",
+    "destination": "/calendario-de-actividades-2024/",
+    "status": 200,
+    "action": "preserve",
+    "bodyRecovered": true,
+    "reason": "Retained historical or institutional route"
+  },
+  {
+    "source": "/canciones-para-recordar-fraternidad-sin-fronteras/",
+    "destination": "/canciones-para-recordar-fraternidad-sin-fronteras/",
+    "status": 200,
+    "action": "preserve",
+    "bodyRecovered": true,
+    "reason": "Retained historical or institutional route"
+  },
+  {
+    "source": "/cierre-de-actividades-de-ingles-basico/",
+    "destination": "/cierre-de-actividades-de-ingles-basico/",
+    "status": 200,
+    "action": "preserve",
+    "bodyRecovered": true,
+    "reason": "Retained historical or institutional route"
+  },
+  {
+    "source": "/cierre-de-clases/",
+    "destination": "/cierre-de-clases/",
+    "status": 200,
+    "action": "preserve",
+    "bodyRecovered": true,
+    "reason": "Retained historical or institutional route"
+  },
+  {
+    "source": "/clases-de-matematicas/",
+    "destination": "/clases-de-matematicas/",
+    "status": 200,
+    "action": "preserve",
+    "bodyRecovered": true,
+    "reason": "Retained historical or institutional route"
+  },
+  {
+    "source": "/comida-infantil/",
+    "destination": "/programas/#asistencia-social",
+    "status": 301,
+    "reason": "Consolidación del programa; contenido de demostración excluido",
+    "action": "redirect"
+  },
+  {
+    "source": "/como-ayudar/",
+    "destination": "/como-ayudar/",
+    "status": 200,
+    "action": "preserve",
+    "bodyRecovered": true,
+    "reason": "Retained historical or institutional route"
+  },
+  {
+    "source": "/conmemorando-el-dia-contra-el-trabajo-infantil/",
+    "destination": "/conmemorando-el-dia-contra-el-trabajo-infantil/",
+    "status": 200,
+    "action": "preserve",
+    "bodyRecovered": true,
+    "reason": "Retained historical or institutional route"
+  },
+  {
+    "source": "/conmemorando-el-dia-internacional-de-la-mujer-en-la-alcaldia-cuajimalpa/",
+    "destination": "/conmemorando-el-dia-internacional-de-la-mujer-en-la-alcaldia-cuajimalpa/",
+    "status": 200,
+    "action": "preserve",
+    "bodyRecovered": true,
+    "reason": "Retained historical or institutional route"
+  },
+  {
+    "source": "/contacto/",
+    "destination": "/contacto/",
+    "status": 200,
+    "action": "preserve",
+    "bodyRecovered": true,
+    "reason": "Retained historical or institutional route"
+  },
+  {
+    "source": "/convivio-festejando-a-un-nino-freda-frick/",
+    "destination": "/convivio-festejando-a-un-nino-freda-frick/",
+    "status": 200,
+    "action": "preserve",
+    "bodyRecovered": true,
+    "reason": "Retained historical or institutional route"
+  },
+  {
+    "source": "/cuidando-durante-el-covid19/",
+    "destination": "/cuidando-durante-el-covid19/",
+    "status": 200,
+    "action": "preserve",
+    "bodyRecovered": true,
+    "reason": "Retained historical or institutional route"
+  },
+  {
+    "source": "/cultura-guerrero-tradicional/",
+    "destination": "/cultura-guerrero-tradicional/",
+    "status": 200,
+    "action": "preserve",
+    "bodyRecovered": true,
+    "reason": "Retained historical or institutional route"
+  },
+  {
+    "source": "/donar-ahora/",
+    "destination": "/donar-ahora/",
+    "status": 200,
+    "action": "preserve",
+    "bodyRecovered": false,
+    "reason": "New explanatory page; Give service remains on original WordPress until cutover"
+  },
+  {
+    "source": "/enterate/",
+    "destination": "/transparencia/",
+    "status": 301,
+    "reason": "Los documentos y reconocimientos se integran en transparencia",
+    "action": "redirect"
+  },
+  {
+    "source": "/entrega-de-detalles-navidenos-2023-2/",
+    "destination": "/entrega-de-detalles-navidenos-2023-2/",
+    "status": 200,
+    "action": "preserve",
+    "bodyRecovered": true,
+    "reason": "Retained historical or institutional route"
+  },
+  {
+    "source": "/feria-informativa-tec-de-monterrey/",
+    "destination": "/feria-informativa-tec-de-monterrey/",
+    "status": 200,
+    "action": "preserve",
+    "bodyRecovered": true,
+    "reason": "Retained historical or institutional route"
+  },
+  {
+    "source": "/festividad-de-dia-de-muertos-en-fundacion-dar-y-amar-daya/",
+    "destination": "/festividad-de-dia-de-muertos-en-fundacion-dar-y-amar-daya/",
+    "status": 200,
+    "action": "preserve",
+    "bodyRecovered": true,
+    "reason": "Retained historical or institutional route"
+  },
+  {
+    "source": "/festividad-de-la-celebracion-de-dia-de-muertos/",
+    "destination": "/festividad-de-la-celebracion-de-dia-de-muertos/",
+    "status": 200,
+    "action": "preserve",
+    "bodyRecovered": true,
+    "reason": "Retained historical or institutional route"
+  },
+  {
+    "source": "/haleria/",
+    "destination": "/galeria/",
+    "status": 301,
+    "reason": "Corrección del nombre de la galería",
+    "action": "redirect"
+  },
+  {
+    "source": "/ko-bullying-ines-maria-gasca/",
+    "destination": "/ko-bullying-ines-maria-gasca/",
+    "status": 200,
+    "action": "preserve",
+    "bodyRecovered": true,
+    "reason": "Retained historical or institutional route"
+  },
+  {
+    "source": "/las-noticias-agosto-2023/",
+    "destination": "/las-noticias-agosto-2023/",
+    "status": 200,
+    "action": "preserve",
+    "bodyRecovered": true,
+    "reason": "Retained historical or institutional route"
+  },
+  {
+    "source": "/los-valores-ines-maria-gasca/",
+    "destination": "/los-valores-ines-maria-gasca/",
+    "status": 200,
+    "action": "preserve",
+    "bodyRecovered": true,
+    "reason": "Retained historical or institutional route"
+  },
+  {
+    "source": "/nocaut-al-bullying/",
+    "destination": "/nocaut-al-bullying/",
+    "status": 200,
+    "action": "preserve",
+    "bodyRecovered": true,
+    "reason": "Retained historical or institutional route"
+  },
+  {
+    "source": "/orientacion/",
+    "destination": "/programas/#orientacion",
+    "status": 301,
+    "reason": "Programa integrado en ejes de acción",
+    "action": "redirect"
+  },
+  {
+    "source": "/pagina-en-construccion/",
+    "destination": "/actividades-bb-foundation/",
+    "status": 301,
+    "reason": "Elimina destino provisional del enlace de actividades",
+    "action": "redirect"
+  },
+  {
+    "source": "/participar-en-eventos-junio-2025/",
+    "destination": "/participar-en-eventos-junio-2025/",
+    "status": 200,
+    "action": "preserve",
+    "bodyRecovered": true,
+    "reason": "Retained historical or institutional route"
+  },
+  {
+    "source": "/pruebas/ayuda-y-esperanza/",
+    "destination": "/programas/#asistencia-social",
+    "status": 301,
+    "reason": "Limpieza de rutas de pruebas",
+    "action": "redirect"
+  },
+  {
+    "source": "/pruebas/contacto/",
+    "destination": "/contacto/",
+    "status": 301,
+    "reason": "Limpieza de rutas de pruebas",
+    "action": "redirect"
+  },
+  {
+    "source": "/pruebas/quienes-somos/",
+    "destination": "/quienes-somos/",
+    "status": 301,
+    "reason": "Limpieza de rutas de pruebas",
+    "action": "redirect"
+  },
+  {
+    "source": "/pruebas/voluntareado/",
+    "destination": "/voluntariado/",
+    "status": 301,
+    "reason": "Limpieza de rutas de pruebas",
+    "action": "redirect"
+  },
+  {
+    "source": "/que-es-el-arte-que-es-un-amigo-fraternidad-sin-frontreras/",
+    "destination": "/que-es-el-arte-que-es-un-amigo-fraternidad-sin-frontreras/",
+    "status": 200,
+    "action": "preserve",
+    "bodyRecovered": true,
+    "reason": "Retained historical or institutional route"
+  },
+  {
+    "source": "/que-es-leer-y-el-valor-del-respeto-hogar-dulce-hogar-canciones-para-recordar-fraternidad-sin-fronteras/",
+    "destination": "/que-es-leer-y-el-valor-del-respeto-hogar-dulce-hogar-canciones-para-recordar-fraternidad-sin-fronteras/",
+    "status": 200,
+    "action": "preserve",
+    "bodyRecovered": true,
+    "reason": "Retained historical or institutional route"
+  },
+  {
+    "source": "/quienes-somos/",
+    "destination": "/quienes-somos/",
+    "status": 200,
+    "action": "preserve",
+    "bodyRecovered": true,
+    "reason": "Retained historical or institutional route"
+  },
+  {
+    "source": "/resumen-de-actividades-diciembre/",
+    "destination": "/resumen-de-actividades-diciembre/",
+    "status": 200,
+    "action": "preserve",
+    "bodyRecovered": true,
+    "reason": "Retained historical or institutional route"
+  },
+  {
+    "source": "/resumen-de-actividades-foundation-2023/",
+    "destination": "/resumen-de-actividades-foundation-2023/",
+    "status": 200,
+    "action": "preserve",
+    "bodyRecovered": true,
+    "reason": "Retained historical or institutional route"
+  },
+  {
+    "source": "/resumen-de-actividades-foundation-febrero-2024/",
+    "destination": "/resumen-de-actividades-foundation-febrero-2024/",
+    "status": 200,
+    "action": "preserve",
+    "bodyRecovered": true,
+    "reason": "Retained historical or institutional route"
+  },
+  {
+    "source": "/resumen-de-actividades-foundation-junio-2024/",
+    "destination": "/resumen-de-actividades-foundation-junio-2024/",
+    "status": 200,
+    "action": "preserve",
+    "bodyRecovered": true,
+    "reason": "Retained historical or institutional route"
+  },
+  {
+    "source": "/resumen-de-actividades-foundation-marzo-2024/",
+    "destination": "/resumen-de-actividades-foundation-marzo-2024/",
+    "status": 200,
+    "action": "preserve",
+    "bodyRecovered": true,
+    "reason": "Retained historical or institutional route"
+  },
+  {
+    "source": "/resumen-de-actividades-foundation-mayo-2024/",
+    "destination": "/resumen-de-actividades-foundation-mayo-2024/",
+    "status": 200,
+    "action": "preserve",
+    "bodyRecovered": true,
+    "reason": "Retained historical or institutional route"
+  },
+  {
+    "source": "/resumen-de-actividades-foundation-octubre-2024/",
+    "destination": "/resumen-de-actividades-foundation-octubre-2024/",
+    "status": 200,
+    "action": "preserve",
+    "bodyRecovered": true,
+    "reason": "Retained historical or institutional route"
+  },
+  {
+    "source": "/resumen-de-actividades-noviembre/",
+    "destination": "/resumen-de-actividades-noviembre/",
+    "status": 200,
+    "action": "preserve",
+    "bodyRecovered": true,
+    "reason": "Retained historical or institutional route"
+  },
+  {
+    "source": "/resumen-de-actividades-octubre/",
+    "destination": "/resumen-de-actividades-octubre/",
+    "status": 200,
+    "action": "preserve",
+    "bodyRecovered": true,
+    "reason": "Retained historical or institutional route"
+  },
+  {
+    "source": "/semana-con-el-instituto-tecnologico-y-de-estudios-superiores-de-monterrey-campus-ciudad-de-mexico-mayo/",
+    "destination": "/semana-con-el-instituto-tecnologico-y-de-estudios-superiores-de-monterrey-campus-ciudad-de-mexico-mayo/",
+    "status": 200,
+    "action": "preserve",
+    "bodyRecovered": true,
+    "reason": "Retained historical or institutional route"
+  },
+  {
+    "source": "/sensibilizacion-hacia-el-bullying-primaria/",
+    "destination": "/sensibilizacion-hacia-el-bullying-primaria/",
+    "status": 200,
+    "action": "preserve",
+    "bodyRecovered": true,
+    "reason": "Retained historical or institutional route"
+  },
+  {
+    "source": "/taller-cuentos-mexicanos-dia-internacional-del-libro-yolia/",
+    "destination": "/taller-cuentos-mexicanos-dia-internacional-del-libro-yolia/",
+    "status": 200,
+    "action": "preserve",
+    "bodyRecovered": true,
+    "reason": "Retained historical or institutional route"
+  },
+  {
+    "source": "/taller-de-empatia-el-valor-de-la-familia-la-amistad-y-las-tradiciones/",
+    "destination": "/taller-de-empatia-el-valor-de-la-familia-la-amistad-y-las-tradiciones/",
+    "status": 200,
+    "action": "preserve",
+    "bodyRecovered": true,
+    "reason": "Retained historical or institutional route"
+  },
+  {
+    "source": "/taller-de-empatia-tapete-de-movimiento/",
+    "destination": "/taller-de-empatia-tapete-de-movimiento/",
+    "status": 200,
+    "action": "preserve",
+    "bodyRecovered": true,
+    "reason": "Retained historical or institutional route"
+  },
+  {
+    "source": "/taller-de-empatia-visitiendo-a-mi-calaverita/",
+    "destination": "/taller-de-empatia-visitiendo-a-mi-calaverita/",
+    "status": 200,
+    "action": "preserve",
+    "bodyRecovered": true,
+    "reason": "Retained historical or institutional route"
+  },
+  {
+    "source": "/taller-de-empatia-y-manualidades-mi-calaverita/",
+    "destination": "/taller-de-empatia-y-manualidades-mi-calaverita/",
+    "status": 200,
+    "action": "preserve",
+    "bodyRecovered": true,
+    "reason": "Retained historical or institutional route"
+  },
+  {
+    "source": "/taller-de-ingles-preparandonos-para-la-navidad/",
+    "destination": "/taller-de-ingles-preparandonos-para-la-navidad/",
+    "status": 200,
+    "action": "preserve",
+    "bodyRecovered": true,
+    "reason": "Retained historical or institutional route"
+  },
+  {
+    "source": "/taller-de-ingles-vocabulario-navideno/",
+    "destination": "/taller-de-ingles-vocabulario-navideno/",
+    "status": 200,
+    "action": "preserve",
+    "bodyRecovered": true,
+    "reason": "Retained historical or institutional route"
+  },
+  {
+    "source": "/taller-de-lectura-el-mounstro-de-colores-las-emociones-fraternidad/",
+    "destination": "/taller-de-lectura-el-mounstro-de-colores-las-emociones-fraternidad/",
+    "status": 200,
+    "action": "preserve",
+    "bodyRecovered": true,
+    "reason": "Retained historical or institutional route"
+  },
+  {
+    "source": "/taller-de-lectura-el-principito-y-biografia-de-saint-exupery-una-vida-de-aventuras-por-el-aire-y-las-letras/",
+    "destination": "/taller-de-lectura-el-principito-y-biografia-de-saint-exupery-una-vida-de-aventuras-por-el-aire-y-las-letras/",
+    "status": 200,
+    "action": "preserve",
+    "bodyRecovered": true,
+    "reason": "Retained historical or institutional route"
+  },
+  {
+    "source": "/taller-de-lectura-la-biografia-de-ana-frank/",
+    "destination": "/taller-de-lectura-la-biografia-de-ana-frank/",
+    "status": 200,
+    "action": "preserve",
+    "bodyRecovered": true,
+    "reason": "Retained historical or institutional route"
+  },
+  {
+    "source": "/taller-de-lectura-los-mitos-del-amor-en-la-adolescencia/",
+    "destination": "/taller-de-lectura-los-mitos-del-amor-en-la-adolescencia/",
+    "status": 200,
+    "action": "preserve",
+    "bodyRecovered": true,
+    "reason": "Retained historical or institutional route"
+  },
+  {
+    "source": "/taller-de-lectura-presentacion-del-libro-locura/",
+    "destination": "/taller-de-lectura-presentacion-del-libro-locura/",
+    "status": 200,
+    "action": "preserve",
+    "bodyRecovered": true,
+    "reason": "Retained historical or institutional route"
+  },
+  {
+    "source": "/taller-empatia-y-destreza/",
+    "destination": "/taller-empatia-y-destreza/",
+    "status": 200,
+    "action": "preserve",
+    "bodyRecovered": true,
+    "reason": "Retained historical or institutional route"
+  },
+  {
+    "source": "/taller-expresion-de-emociones/",
+    "destination": "/taller-expresion-de-emociones/",
+    "status": 200,
+    "action": "preserve",
+    "bodyRecovered": true,
+    "reason": "Retained historical or institutional route"
+  },
+  {
+    "source": "/taller-la-rueda-de-las-emociones/",
+    "destination": "/taller-la-rueda-de-las-emociones/",
+    "status": 200,
+    "action": "preserve",
+    "bodyRecovered": true,
+    "reason": "Retained historical or institutional route"
+  },
+  {
+    "source": "/taller-promoviendo-la-lectura-club-de-lectura-mental-morfosis-del-autor-franz-de-paula/",
+    "destination": "/taller-promoviendo-la-lectura-club-de-lectura-mental-morfosis-del-autor-franz-de-paula/",
+    "status": 200,
+    "action": "preserve",
+    "bodyRecovered": true,
+    "reason": "Retained historical or institutional route"
+  },
+  {
+    "source": "/taller-promoviendo-la-lectura-club-de-lectura-mental-morfosis/",
+    "destination": "/taller-promoviendo-la-lectura-club-de-lectura-mental-morfosis/",
+    "status": 200,
+    "action": "preserve",
+    "bodyRecovered": true,
+    "reason": "Retained historical or institutional route"
+  },
+  {
+    "source": "/taller-que-es-leer-activando-la-imaginacion/",
+    "destination": "/taller-que-es-leer-activando-la-imaginacion/",
+    "status": 200,
+    "action": "preserve",
+    "bodyRecovered": true,
+    "reason": "Retained historical or institutional route"
+  },
+  {
+    "source": "/taller-que-es-una-leyenda-que-es-un-mito-y-el-diseno-de-una-calaverita/",
+    "destination": "/taller-que-es-una-leyenda-que-es-un-mito-y-el-diseno-de-una-calaverita/",
+    "status": 200,
+    "action": "preserve",
+    "bodyRecovered": true,
+    "reason": "Retained historical or institutional route"
+  },
+  {
+    "source": "/tallerde-empatia-quien-soy-yo-auto-concepto-autoestima/",
+    "destination": "/tallerde-empatia-quien-soy-yo-auto-concepto-autoestima/",
+    "status": 200,
+    "action": "preserve",
+    "bodyRecovered": true,
+    "reason": "Retained historical or institutional route"
+  },
+  {
+    "source": "/talleres-de-empatia-en-fundacion-fraternidad-sin-fronteras-2/",
+    "destination": "/talleres-de-empatia-en-fundacion-fraternidad-sin-fronteras-2/",
+    "status": 200,
+    "action": "preserve",
+    "bodyRecovered": true,
+    "reason": "Retained historical or institutional route"
+  },
+  {
+    "source": "/talleres-de-empatia-en-fundacion-fraternidad-sin-fronteras-febrero/",
+    "destination": "/talleres-de-empatia-en-fundacion-fraternidad-sin-fronteras-febrero/",
+    "status": 200,
+    "action": "preserve",
+    "bodyRecovered": true,
+    "reason": "Retained historical or institutional route"
+  },
+  {
+    "source": "/talleres-de-empatia-en-fundacion-fraternidad-sin-fronteras-junio/",
+    "destination": "/talleres-de-empatia-en-fundacion-fraternidad-sin-fronteras-junio/",
+    "status": 200,
+    "action": "preserve",
+    "bodyRecovered": true,
+    "reason": "Retained historical or institutional route"
+  },
+  {
+    "source": "/talleres-de-empatia-en-fundacion-fraternidad-sin-fronteras-mayo/",
+    "destination": "/talleres-de-empatia-en-fundacion-fraternidad-sin-fronteras-mayo/",
+    "status": 200,
+    "action": "preserve",
+    "bodyRecovered": true,
+    "reason": "Retained historical or institutional route"
+  },
+  {
+    "source": "/talleres-en-casa-hogar-de-adultos-mayores/",
+    "destination": "/talleres-en-casa-hogar-de-adultos-mayores/",
+    "status": 200,
+    "action": "preserve",
+    "bodyRecovered": true,
+    "reason": "Retained historical or institutional route"
+  },
+  {
+    "source": "/talleres-en-casa-hogar-dif-azcapotzalco-de-adultos-mayores-junio/",
+    "destination": "/talleres-en-casa-hogar-dif-azcapotzalco-de-adultos-mayores-junio/",
+    "status": 200,
+    "action": "preserve",
+    "bodyRecovered": true,
+    "reason": "Retained historical or institutional route"
+  },
+  {
+    "source": "/talleres-en-casa-hogar-dif-azcapotzalco-de-adultos-mayores-mayo/",
+    "destination": "/talleres-en-casa-hogar-dif-azcapotzalco-de-adultos-mayores-mayo/",
+    "status": 200,
+    "action": "preserve",
+    "bodyRecovered": true,
+    "reason": "Retained historical or institutional route"
+  },
+  {
+    "source": "/talleres-en-casa-hogar-dif-azcapotzalco-de-adultos-mayores/",
+    "destination": "/talleres-en-casa-hogar-dif-azcapotzalco-de-adultos-mayores/",
+    "status": 200,
+    "action": "preserve",
+    "bodyRecovered": true,
+    "reason": "Retained historical or institutional route"
+  },
+  {
+    "source": "/talleres-en-casa-refugiados-a-c/",
+    "destination": "/talleres-en-casa-refugiados-a-c/",
+    "status": 200,
+    "action": "preserve",
+    "bodyRecovered": true,
+    "reason": "Retained historical or institutional route"
+  },
+  {
+    "source": "/talleres-en-comunidad-moss-i-a-p/",
+    "destination": "/talleres-en-comunidad-moss-i-a-p/",
+    "status": 200,
+    "action": "preserve",
+    "bodyRecovered": true,
+    "reason": "Retained historical or institutional route"
+  },
+  {
+    "source": "/talleres-para-ninas-albergue-ines-maria-octubre/",
+    "destination": "/talleres-para-ninas-albergue-ines-maria-octubre/",
+    "status": 200,
+    "action": "preserve",
+    "bodyRecovered": true,
+    "reason": "Retained historical or institutional route"
+  },
+  {
+    "source": "/talleres-para-ninas-mayo/",
+    "destination": "/talleres-para-ninas-mayo/",
+    "status": 200,
+    "action": "preserve",
+    "bodyRecovered": true,
+    "reason": "Retained historical or institutional route"
+  },
+  {
+    "source": "/transparencia/",
+    "destination": "/transparencia/",
+    "status": 200,
+    "action": "preserve",
+    "bodyRecovered": true,
+    "reason": "Retained historical or institutional route"
+  },
+  {
+    "source": "/voluntareado/",
+    "destination": "/voluntariado/",
+    "status": 301,
+    "reason": "Corrección ortográfica",
+    "action": "redirect"
+  },
+  {
+    "source": "/voluntariado-xochicalco/",
+    "destination": "/voluntariado-xochicalco/",
+    "status": 200,
+    "action": "preserve",
+    "bodyRecovered": true,
+    "reason": "Retained historical or institutional route"
+  }
+]

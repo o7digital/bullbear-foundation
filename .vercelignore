@@ -1,0 +1,9 @@
+migration/raw/
+migration/source/
+migration/ocr/
+migration/reports/
+tests/
+artifacts/
+.git/
+.env*
+!.env.example

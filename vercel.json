@@ -1,0 +1,106 @@
+{
+  "framework": "astro",
+  "buildCommand": "npm run build",
+  "outputDirectory": "dist",
+  "trailingSlash": true,
+  "redirects": [
+    {
+      "source": "/actividades",
+      "destination": "/actividades-bb-foundation/",
+      "statusCode": 301
+    },
+    {
+      "source": "/haleria",
+      "destination": "/galeria/",
+      "statusCode": 301
+    },
+    {
+      "source": "/voluntareado",
+      "destination": "/voluntariado/",
+      "statusCode": 301
+    },
+    {
+      "source": "/enterate",
+      "destination": "/transparencia/",
+      "statusCode": 301
+    },
+    {
+      "source": "/orientacion",
+      "destination": "/programas/#orientacion",
+      "statusCode": 301
+    },
+    {
+      "source": "/comida-infantil",
+      "destination": "/programas/#asistencia-social",
+      "statusCode": 301
+    },
+    {
+      "source": "/ayuda-y-esperanza",
+      "destination": "/programas/#asistencia-social",
+      "statusCode": 301
+    },
+    {
+      "source": "/pagina-en-construccion",
+      "destination": "/actividades-bb-foundation/",
+      "statusCode": 301
+    },
+    {
+      "source": "/pruebas/contacto",
+      "destination": "/contacto/",
+      "statusCode": 301
+    },
+    {
+      "source": "/pruebas/quienes-somos",
+      "destination": "/quienes-somos/",
+      "statusCode": 301
+    },
+    {
+      "source": "/pruebas/ayuda-y-esperanza",
+      "destination": "/programas/#asistencia-social",
+      "statusCode": 301
+    },
+    {
+      "source": "/pruebas/voluntareado",
+      "destination": "/voluntariado/",
+      "statusCode": 301
+    }
+  ],
+  "rewrites": [
+    {
+      "source": "/wp-content/uploads/:year/:month/:file",
+      "destination": "/api/legacy-media?path=:year/:month/:file"
+    }
+  ],
+  "headers": [
+    {
+      "source": "/(.*)",
+      "headers": [
+        {
+          "key": "X-Content-Type-Options",
+          "value": "nosniff"
+        },
+        {
+          "key": "Referrer-Policy",
+          "value": "strict-origin-when-cross-origin"
+        },
+        {
+          "key": "Permissions-Policy",
+          "value": "camera=(), microphone=(), geolocation=()"
+        },
+        {
+          "key": "X-Robots-Tag",
+          "value": "noindex, nofollow"
+        }
+      ]
+    },
+    {
+      "source": "/_astro/(.*)",
+      "headers": [
+        {
+          "key": "Cache-Control",
+          "value": "public, max-age=31536000, immutable"
+        }
+      ]
+    }
+  ]
+}

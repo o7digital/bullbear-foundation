@@ -1,0 +1,4 @@
+---
+import Layout from '../layouts/Layout.astro';import PageIntro from '../components/PageIntro.astro';import legal from '../data/privacy.html?raw';
+---
+<Layout title="Aviso de privacidad | Fundación Bull & Bear" description="Consulta el aviso de privacidad publicado por Fundación Bull & Bear y el contacto para ejercer los derechos de acceso, rectificación, cancelación y oposición."><PageIntro eyebrow="Aviso de privacidad" title="El cuidado también<br/>está en <em>tus datos.</em>"/><div class="container page-body"><article class="prose legal-copy" set:html={legal}/></div></Layout>

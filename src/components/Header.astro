@@ -1,0 +1,27 @@
+---
+import {Image} from 'astro:assets';
+import {media,logo} from '../data/media';
+import {navigation} from '../data/site';
+import Arrow from './Arrow.astro';
+const path=Astro.url.pathname;
+---
+<header class="site-header">
+ <div class="container header-inner">
+  <a class="brand" href="/" aria-label="Bull & Bear Foundation — Inicio"><Image src={media(logo)} width={225} height={53} alt="Bull & Bear Foundation" loading="eager" /></a>
+  <button class="menu-toggle" aria-label="Abrir menú" aria-expanded="false" aria-controls="main-navigation"><span></span><span></span><span></span></button>
+  <nav id="main-navigation" aria-label="Navegación principal">
+   {navigation.map(item=><a href={item.href} aria-current={path.startsWith(item.href)?'page':undefined}>{item.label}</a>)}
+   <a class="button button-small" href="/donar-ahora/">Quiero ayudar <Arrow diagonal /></a>
+  </nav>
+ </div>
+</header>
+<script>
+ const button=document.querySelector<HTMLButtonElement>('.menu-toggle');
+ const nav=document.querySelector<HTMLElement>('#main-navigation');
+ function closeMenu(){button?.setAttribute('aria-expanded','false');nav?.classList.remove('is-open');}
+ button?.addEventListener('click',()=>{const open=button.getAttribute('aria-expanded')!=='true';button.setAttribute('aria-expanded',String(open));nav?.classList.toggle('is-open',open);if(open)nav?.querySelector('a')?.focus();});
+ document.addEventListener('keydown',(event)=>{if(button?.getAttribute('aria-expanded')!=='true')return;if(event.key==='Escape'){closeMenu();button.focus();}if(event.key==='Tab'&&nav){const links=Array.from(nav.querySelectorAll('a'));const last=links.at(-1);if(!event.shiftKey&&document.activeElement===last){event.preventDefault();button?.focus();}else if(event.shiftKey&&document.activeElement===button){event.preventDefault();last?.focus();}}});
+ nav?.querySelectorAll('a').forEach(a=>a.addEventListener('click',closeMenu));
+ window.matchMedia('(min-width: 1100px)').addEventListener('change',closeMenu);
+
+</script>

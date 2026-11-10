@@ -1,0 +1,74 @@
+[
+  {
+    "source": "/actividades/",
+    "destination": "/actividades-bb-foundation/",
+    "status": 301,
+    "reason": "Consolidación del índice duplicado"
+  },
+  {
+    "source": "/haleria/",
+    "destination": "/galeria/",
+    "status": 301,
+    "reason": "Corrección del nombre de la galería"
+  },
+  {
+    "source": "/voluntareado/",
+    "destination": "/voluntariado/",
+    "status": 301,
+    "reason": "Corrección ortográfica"
+  },
+  {
+    "source": "/enterate/",
+    "destination": "/transparencia/",
+    "status": 301,
+    "reason": "Los documentos y reconocimientos se integran en transparencia"
+  },
+  {
+    "source": "/orientacion/",
+    "destination": "/programas/#orientacion",
+    "status": 301,
+    "reason": "Programa integrado en ejes de acción"
+  },
+  {
+    "source": "/comida-infantil/",
+    "destination": "/programas/#asistencia-social",
+    "status": 301,
+    "reason": "Consolidación del programa; contenido de demostración excluido"
+  },
+  {
+    "source": "/ayuda-y-esperanza/",
+    "destination": "/programas/#asistencia-social",
+    "status": 301,
+    "reason": "Consolidación de asistencia social"
+  },
+  {
+    "source": "/pagina-en-construccion/",
+    "destination": "/actividades-bb-foundation/",
+    "status": 301,
+    "reason": "Elimina destino provisional del enlace de actividades"
+  },
+  {
+    "source": "/pruebas/contacto/",
+    "destination": "/contacto/",
+    "status": 301,
+    "reason": "Limpieza de rutas de pruebas"
+  },
+  {
+    "source": "/pruebas/quienes-somos/",
+    "destination": "/quienes-somos/",
+    "status": 301,
+    "reason": "Limpieza de rutas de pruebas"
+  },
+  {
+    "source": "/pruebas/ayuda-y-esperanza/",
+    "destination": "/programas/#asistencia-social",
+    "status": 301,
+    "reason": "Limpieza de rutas de pruebas"
+  },
+  {
+    "source": "/pruebas/voluntareado/",
+    "destination": "/voluntariado/",
+    "status": 301,
+    "reason": "Limpieza de rutas de pruebas"
+  }
+]

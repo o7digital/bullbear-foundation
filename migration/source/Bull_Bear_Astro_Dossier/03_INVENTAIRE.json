@@ -1,0 +1,477 @@
+{
+  "date": "2026-11-09",
+  "timezone": "America/Mexico_City",
+  "scope": "Inventaire initial non exhaustif. Les URL médias sont repérées, fichiers non téléchargés.",
+  "pages": [
+    {
+      "source_url": "https://www.bullandbear-foundation.com/",
+      "type": "accueil",
+      "inspection_status": "consulté",
+      "proposed_action": "conserver",
+      "target_path": "/",
+      "full_body_archived": false
+    },
+    {
+      "source_url": "https://www.bullandbear-foundation.com/quienes-somos/",
+      "type": "institutionnel",
+      "inspection_status": "consulté",
+      "proposed_action": "conserver",
+      "target_path": "/quienes-somos/",
+      "full_body_archived": false
+    },
+    {
+      "source_url": "https://www.bullandbear-foundation.com/actividades-bb-foundation/",
+      "type": "index d’activités",
+      "inspection_status": "consulté",
+      "proposed_action": "conserver",
+      "target_path": "/actividades-bb-foundation/",
+      "full_body_archived": false
+    },
+    {
+      "source_url": "https://www.bullandbear-foundation.com/haleria/",
+      "type": "galerie",
+      "inspection_status": "consulté",
+      "proposed_action": "301 proposé",
+      "target_path": "/galeria/",
+      "full_body_archived": false
+    },
+    {
+      "source_url": "https://www.bullandbear-foundation.com/transparencia/",
+      "type": "transparence",
+      "inspection_status": "consulté",
+      "proposed_action": "conserver et compléter",
+      "target_path": "/transparencia/",
+      "full_body_archived": false
+    },
+    {
+      "source_url": "https://www.bullandbear-foundation.com/enterate/",
+      "type": "information",
+      "inspection_status": "consulté",
+      "proposed_action": "à trier",
+      "target_path": null,
+      "full_body_archived": false
+    },
+    {
+      "source_url": "https://www.bullandbear-foundation.com/contacto/",
+      "type": "contact",
+      "inspection_status": "consulté",
+      "proposed_action": "corriger e-mail et conserver",
+      "target_path": "/contacto/",
+      "full_body_archived": false
+    },
+    {
+      "source_url": "https://www.bullandbear-foundation.com/donar-ahora/",
+      "type": "don",
+      "inspection_status": "consulté ; transaction non testée",
+      "proposed_action": "préserver service",
+      "target_path": "/donar-ahora/",
+      "full_body_archived": false
+    },
+    {
+      "source_url": "https://www.bullandbear-foundation.com/como-ayudar/",
+      "type": "participation",
+      "inspection_status": "repéré ; extraction web non aboutie",
+      "proposed_action": "à vérifier",
+      "target_path": "/como-ayudar/",
+      "full_body_archived": false
+    },
+    {
+      "source_url": "https://www.bullandbear-foundation.com/aviso-de-privacidad/",
+      "type": "confidentialité",
+      "inspection_status": "repéré ; extraction web non aboutie",
+      "proposed_action": "à récupérer",
+      "target_path": "/aviso-de-privacidad/",
+      "full_body_archived": false
+    },
+    {
+      "source_url": "https://www.bullandbear-foundation.com/voluntareado/",
+      "type": "bénévolat",
+      "inspection_status": "repéré ; extraction web non aboutie",
+      "proposed_action": "301 proposé",
+      "target_path": "/voluntariado/",
+      "full_body_archived": false
+    },
+    {
+      "source_url": "https://www.bullandbear-foundation.com/orientacion/",
+      "type": "programme",
+      "inspection_status": "repéré ; extraction web non aboutie",
+      "proposed_action": "à vérifier",
+      "target_path": null,
+      "full_body_archived": false
+    },
+    {
+      "source_url": "https://www.bullandbear-foundation.com/comida-infantil/",
+      "type": "programme",
+      "inspection_status": "repéré",
+      "proposed_action": "à vérifier",
+      "target_path": null,
+      "full_body_archived": false
+    },
+    {
+      "source_url": "https://www.bullandbear-foundation.com/ayuda-y-esperanza/",
+      "type": "programme",
+      "inspection_status": "repéré",
+      "proposed_action": "à vérifier",
+      "target_path": null,
+      "full_body_archived": false
+    },
+    {
+      "source_url": "https://www.bullandbear-foundation.com/cuidando-durante-el-covid19/",
+      "type": "historique",
+      "inspection_status": "repéré",
+      "proposed_action": "archiver ou conserver selon contenu",
+      "target_path": null,
+      "full_body_archived": false
+    },
+    {
+      "source_url": "https://www.bullandbear-foundation.com/calendario-de-actividades-2024/",
+      "type": "archives",
+      "inspection_status": "lecture web ancienne ; à revalider",
+      "proposed_action": "conserver historique",
+      "target_path": "/calendario-de-actividades-2024/",
+      "full_body_archived": false
+    },
+    {
+      "source_url": "https://www.bullandbear-foundation.com/resumen-de-actividades-foundation-2023/",
+      "type": "archives",
+      "inspection_status": "repéré ; extraction web non aboutie",
+      "proposed_action": "conserver historique",
+      "target_path": "/resumen-de-actividades-foundation-2023/",
+      "full_body_archived": false
+    },
+    {
+      "source_url": "https://www.bullandbear-foundation.com/pagina-en-construccion/",
+      "type": "destination du lien Actividades 2025",
+      "inspection_status": "destination révélée par lecteur ; page non récupérée",
+      "proposed_action": "à remplacer selon contenu",
+      "target_path": null,
+      "full_body_archived": false
+    },
+    {
+      "source_url": "https://www.bullandbear-foundation.com/pruebas/contacto/",
+      "type": "ancien lien footer",
+      "inspection_status": "navigation redirigée vers /contacto/",
+      "proposed_action": "remplacer lien interne",
+      "target_path": "/contacto/",
+      "full_body_archived": false
+    },
+    {
+      "source_url": "https://www.bullandbear-foundation.com/pruebas/quienes-somos/",
+      "type": "ancien lien footer",
+      "inspection_status": "repéré",
+      "proposed_action": "à vérifier",
+      "target_path": "/quienes-somos/",
+      "full_body_archived": false
+    },
+    {
+      "source_url": "https://www.bullandbear-foundation.com/pruebas/ayuda-y-esperanza/",
+      "type": "ancien lien footer",
+      "inspection_status": "repéré",
+      "proposed_action": "à vérifier",
+      "target_path": null,
+      "full_body_archived": false
+    },
+    {
+      "source_url": "https://www.bullandbear-foundation.com/pruebas/voluntareado/",
+      "type": "ancien lien footer",
+      "inspection_status": "repéré",
+      "proposed_action": "à vérifier",
+      "target_path": "/voluntariado/",
+      "full_body_archived": false
+    },
+    {
+      "source_url": "https://www.bullandbear-foundation.com/convivio-festejando-a-un-nino-freda-frick/",
+      "type": "activité",
+      "inspection_status": "lien galerie repéré",
+      "proposed_action": "à récupérer",
+      "target_path": null,
+      "full_body_archived": false
+    },
+    {
+      "source_url": "https://www.bullandbear-foundation.com/taller-cuentos-mexicanos-dia-internacional-del-libro-yolia/",
+      "type": "activité",
+      "inspection_status": "lien galerie repéré",
+      "proposed_action": "à récupérer",
+      "target_path": null,
+      "full_body_archived": false
+    },
+    {
+      "source_url": "https://www.bullandbear-foundation.com/taller-de-lectura-el-mounstro-de-colores-las-emociones-fraternidad/",
+      "type": "activité",
+      "inspection_status": "lien galerie repéré",
+      "proposed_action": "à récupérer",
+      "target_path": null,
+      "full_body_archived": false
+    },
+    {
+      "source_url": "https://www.bullandbear-foundation.com/ko-bullying-ines-maria-gasca/",
+      "type": "activité",
+      "inspection_status": "lien galerie repéré",
+      "proposed_action": "à récupérer",
+      "target_path": null,
+      "full_body_archived": false
+    },
+    {
+      "source_url": "https://www.bullandbear-foundation.com/asilo-arbo-de-vida/",
+      "type": "activité",
+      "inspection_status": "lien galerie repéré",
+      "proposed_action": "à récupérer",
+      "target_path": null,
+      "full_body_archived": false
+    },
+    {
+      "source_url": "https://www.bullandbear-foundation.com/los-valores-ines-maria-gasca/",
+      "type": "activité",
+      "inspection_status": "lien galerie repéré",
+      "proposed_action": "à récupérer",
+      "target_path": null,
+      "full_body_archived": false
+    },
+    {
+      "source_url": "https://www.bullandbear-foundation.com/que-es-el-arte-que-es-un-amigo-fraternidad-sin-frontreras/",
+      "type": "activité",
+      "inspection_status": "lien galerie repéré",
+      "proposed_action": "à récupérer",
+      "target_path": null,
+      "full_body_archived": false
+    },
+    {
+      "source_url": "https://www.bullandbear-foundation.com/conmemorando-el-dia-contra-el-trabajo-infantil/",
+      "type": "activité",
+      "inspection_status": "lien galerie repéré",
+      "proposed_action": "à récupérer",
+      "target_path": null,
+      "full_body_archived": false
+    },
+    {
+      "source_url": "https://www.bullandbear-foundation.com/que-es-leer-y-el-valor-del-respeto-hogar-dulce-hogar-canciones-para-recordar-fraternidad-sin-fronteras/",
+      "type": "activité",
+      "inspection_status": "lien galerie repéré",
+      "proposed_action": "à récupérer",
+      "target_path": null,
+      "full_body_archived": false
+    },
+    {
+      "source_url": "https://www.bullandbear-foundation.com/canciones-para-recordar-fraternidad-sin-fronteras/",
+      "type": "activité",
+      "inspection_status": "lien galerie repéré",
+      "proposed_action": "à récupérer",
+      "target_path": null,
+      "full_body_archived": false
+    },
+    {
+      "source_url": "https://www.bullandbear-foundation.com/sensibilizacion-hacia-el-bullying-primaria/",
+      "type": "activité",
+      "inspection_status": "lien galerie repéré",
+      "proposed_action": "à récupérer",
+      "target_path": null,
+      "full_body_archived": false
+    },
+    {
+      "source_url": "https://www.bullandbear-foundation.com/talleres-para-ninas-albergue-ines-maria-octubre/",
+      "type": "activité",
+      "inspection_status": "lien accueil repéré",
+      "proposed_action": "à récupérer",
+      "target_path": null,
+      "full_body_archived": false
+    },
+    {
+      "source_url": "https://www.bullandbear-foundation.com/talleres-en-casa-refugiados-a-c/",
+      "type": "activité",
+      "inspection_status": "lien accueil repéré",
+      "proposed_action": "à récupérer",
+      "target_path": null,
+      "full_body_archived": false
+    }
+  ],
+  "media": [
+    {
+      "source_url": "https://www.bullandbear-foundation.com/wp-content/uploads/2023/09/cropped-BB-Fundation-Logotipo-1.png",
+      "found_on": "https://www.bullandbear-foundation.com/transparencia/",
+      "role": "logo",
+      "downloaded": false
+    },
+    {
+      "source_url": "https://www.bullandbear-foundation.com/wp-content/uploads/2023/09/ACUSE-NOTIFICACION-CONSTANCIA-DE-DONATARIA-AUTORIZADA-791x1024.jpg",
+      "found_on": "https://www.bullandbear-foundation.com/transparencia/",
+      "role": "image de document ; original et actualité à obtenir",
+      "downloaded": false
+    },
+    {
+      "source_url": "https://www.bullandbear-foundation.com/wp-content/uploads/2020/10/Logo-Fpundation-03.png",
+      "found_on": "https://www.bullandbear-foundation.com/quienes-somos/",
+      "role": "variante logo",
+      "downloaded": false
+    },
+    {
+      "source_url": "https://www.bullandbear-foundation.com/wp-content/uploads/2020/10/Logo-Fpundation-07.png",
+      "found_on": "https://www.bullandbear-foundation.com/quienes-somos/",
+      "role": "variante logo",
+      "downloaded": false
+    },
+    {
+      "source_url": "https://www.bullandbear-foundation.com/wp-content/uploads/2020/10/Logo-Fpundation-06-300x202.png",
+      "found_on": "https://www.bullandbear-foundation.com/quienes-somos/",
+      "role": "variante logo",
+      "downloaded": false
+    },
+    {
+      "source_url": "https://www.bullandbear-foundation.com/wp-content/uploads/2023/09/abuelitos-03-1024x1024-1.png",
+      "found_on": "https://www.bullandbear-foundation.com/quienes-somos/",
+      "role": "photo à examiner",
+      "downloaded": false
+    },
+    {
+      "source_url": "https://www.bullandbear-foundation.com/wp-content/uploads/2023/09/WhatsApp-Image-2020-09-07-at-14.13.41-1024x1024-1.jpg",
+      "found_on": "https://www.bullandbear-foundation.com/quienes-somos/",
+      "role": "photo à examiner",
+      "downloaded": false
+    },
+    {
+      "source_url": "https://www.bullandbear-foundation.com/wp-content/uploads/2023/09/Foto-Carlos-Reyes.jpg",
+      "found_on": "https://www.bullandbear-foundation.com/quienes-somos/",
+      "role": "portrait selon page source",
+      "downloaded": false
+    },
+    {
+      "source_url": "https://www.bullandbear-foundation.com/wp-content/uploads/2023/09/Image-1.jpg",
+      "found_on": "https://www.bullandbear-foundation.com/quienes-somos/",
+      "role": "portrait selon page source",
+      "downloaded": false
+    },
+    {
+      "source_url": "https://www.bullandbear-foundation.com/wp-content/uploads/2025/02/02e1dd0d-c484-471d-b8fb-ea701160719c-2.jpg",
+      "found_on": "https://www.bullandbear-foundation.com/donar-ahora/",
+      "role": "photo à examiner",
+      "downloaded": false
+    },
+    {
+      "source_url": "https://www.bullandbear-foundation.com/wp-content/uploads/2025/02/2b4e8530-08fa-4ffe-bf84-1baae7a4f52f-2.jpg",
+      "found_on": "https://www.bullandbear-foundation.com/donar-ahora/",
+      "role": "photo à examiner",
+      "downloaded": false
+    },
+    {
+      "source_url": "https://www.bullandbear-foundation.com/wp-content/uploads/2025/02/5def0f6e-f12a-466a-84cb-bacd576a59b9-3.jpg",
+      "found_on": "https://www.bullandbear-foundation.com/donar-ahora/",
+      "role": "photo à examiner",
+      "downloaded": false
+    },
+    {
+      "source_url": "https://www.bullandbear-foundation.com/wp-content/uploads/2025/02/7a93b12b-16cf-4f64-9b43-95f412367660-3.jpg",
+      "found_on": "https://www.bullandbear-foundation.com/donar-ahora/",
+      "role": "photo à examiner",
+      "downloaded": false
+    },
+    {
+      "source_url": "https://www.bullandbear-foundation.com/wp-content/uploads/2025/02/7abe637a-702e-47fa-b1aa-bea71a7d8201-2.jpg",
+      "found_on": "https://www.bullandbear-foundation.com/donar-ahora/",
+      "role": "photo à examiner",
+      "downloaded": false
+    },
+    {
+      "source_url": "https://www.bullandbear-foundation.com/wp-content/uploads/2025/02/18d2dbfe-2efc-4ec1-8fcc-110316fe5beb-2.jpg",
+      "found_on": "https://www.bullandbear-foundation.com/donar-ahora/",
+      "role": "photo à examiner",
+      "downloaded": false
+    },
+    {
+      "source_url": "https://www.bullandbear-foundation.com/wp-content/uploads/2025/02/50c923ce-abe1-4cdb-a701-1565c4ccff6a-2.jpg",
+      "found_on": "https://www.bullandbear-foundation.com/donar-ahora/",
+      "role": "photo à examiner",
+      "downloaded": false
+    },
+    {
+      "source_url": "https://www.bullandbear-foundation.com/wp-content/uploads/2025/02/284a0e55-4d3c-48a1-b22b-60c2ba55a0f0-2.jpg",
+      "found_on": "https://www.bullandbear-foundation.com/donar-ahora/",
+      "role": "photo à examiner",
+      "downloaded": false
+    },
+    {
+      "source_url": "https://www.bullandbear-foundation.com/wp-content/uploads/2025/02/6022b5cb-0506-4a12-917b-7b835ab92782-2.jpg",
+      "found_on": "https://www.bullandbear-foundation.com/donar-ahora/",
+      "role": "photo à examiner",
+      "downloaded": false
+    },
+    {
+      "source_url": "https://www.bullandbear-foundation.com/wp-content/uploads/2025/02/27014b80-5d7d-4038-a087-4c531ba9c20c-2.jpg",
+      "found_on": "https://www.bullandbear-foundation.com/donar-ahora/",
+      "role": "photo à examiner",
+      "downloaded": false
+    },
+    {
+      "source_url": "https://www.bullandbear-foundation.com/wp-content/uploads/2025/02/b2b5c48b-1f09-43de-a9d0-22735e2878b4-2.jpg",
+      "found_on": "https://www.bullandbear-foundation.com/donar-ahora/",
+      "role": "photo à examiner",
+      "downloaded": false
+    },
+    {
+      "source_url": "https://www.bullandbear-foundation.com/wp-content/uploads/2025/02/b9b56b14-6c85-48b9-8af4-d4086830836f-3.jpg",
+      "found_on": "https://www.bullandbear-foundation.com/donar-ahora/",
+      "role": "photo à examiner",
+      "downloaded": false
+    },
+    {
+      "source_url": "https://www.bullandbear-foundation.com/wp-content/uploads/2025/02/fe39c933-be3a-4d23-b842-9dde95ba0808-2.jpg",
+      "found_on": "https://www.bullandbear-foundation.com/donar-ahora/",
+      "role": "photo à examiner",
+      "downloaded": false
+    },
+    {
+      "source_url": "https://www.bullandbear-foundation.com/wp-content/uploads/2025/02/IMG_3133-3-1.jpg",
+      "found_on": "https://www.bullandbear-foundation.com/donar-ahora/",
+      "role": "photo à examiner",
+      "downloaded": false
+    },
+    {
+      "source_url": "https://www.bullandbear-foundation.com/wp-content/uploads/2025/02/IMG_3205-3.jpg",
+      "found_on": "https://www.bullandbear-foundation.com/donar-ahora/",
+      "role": "photo à examiner",
+      "downloaded": false
+    },
+    {
+      "source_url": "https://www.bullandbear-foundation.com/wp-content/uploads/2025/02/IMG_7845-2-scaled.jpg",
+      "found_on": "https://www.bullandbear-foundation.com/donar-ahora/",
+      "role": "photo à examiner",
+      "downloaded": false
+    },
+    {
+      "source_url": "https://www.bullandbear-foundation.com/wp-content/uploads/2025/02/IMG_7729-2-scaled.jpg",
+      "found_on": "https://www.bullandbear-foundation.com/donar-ahora/",
+      "role": "photo à examiner",
+      "downloaded": false
+    },
+    {
+      "source_url": "https://www.bullandbear-foundation.com/wp-content/uploads/2025/02/IMG_7750-2-scaled.jpg",
+      "found_on": "https://www.bullandbear-foundation.com/donar-ahora/",
+      "role": "photo à examiner",
+      "downloaded": false
+    }
+  ],
+  "technical": {
+    "home": {
+      "external_script_elements": 80,
+      "stylesheet_links": 63,
+      "h1_count_dom": 13,
+      "img_count": 30,
+      "images_without_nonempty_alt": 21,
+      "canonical": "https://www.bullandbear-foundation.com/",
+      "html_lang": "es",
+      "meta_description": null,
+      "jsonld_blocks": 0
+    },
+    "theme": "Caridad / Caridad Child",
+    "builder": "Elementor / Elementor Pro",
+    "donation_stack": "Give + Stripe",
+    "fetch_limitation": "Téléchargement HTTP direct refusé par Mod_Security 406 ; pages consultables dans le navigateur.",
+    "unknown": [
+      "Exhaustivité",
+      "Robots et sitemap",
+      "Performances Lighthouse et CrUX",
+      "Trafic/positions Search Console",
+      "Paiements réels",
+      "Mobile",
+      "Paramètres et devise Stripe"
+    ]
+  }
+}

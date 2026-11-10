@@ -1,0 +1,23 @@
+{
+  "retrievalDate": "2026-11-10",
+  "timezone": "America/Mexico_City",
+  "htmlSnapshots": 81,
+  "distinctOriginalPaths": 87,
+  "activities": 55,
+  "activitiesWithConfirmedDay": 38,
+  "activitiesWithoutConfirmedDay": 17,
+  "archiveIndexes": 10,
+  "documents": 23,
+  "mediaDiscovered": 1115,
+  "mediaDownloaded": 1115,
+  "mediaMissing": 0,
+  "redirects": 12,
+  "preservedPaths": 75,
+  "excludedRuleGroups": 7,
+  "limits": [
+    "Page/category REST requests, robots, source sitemap and donation page refused by Mod_Security; no bypass/retry",
+    "No WXR export: orphaned URLs or unpublished/dynamic content cannot be ruled out",
+    "No donor or transaction data was exported"
+  ],
+  "legacyMediaRedirects": 1115
+}

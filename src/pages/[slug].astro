@@ -1,0 +1,6 @@
+---
+import {getCollection} from 'astro:content';import indexes from '../data/archive-indexes.json';import ActivityArticle from '../components/ActivityArticle.astro';import ArchivePage from '../components/ArchivePage.astro';
+export async function getStaticPaths(){return [...(await getCollection('activities')).map(activity=>({params:{slug:activity.id},props:{activity,index:null}})),...indexes.map(index=>({params:{slug:index.id},props:{activity:null,index}}))];}
+const {activity,index}=Astro.props;
+---
+{activity?<ActivityArticle activity={activity}/>:index?<ArchivePage index={index}/>:null}

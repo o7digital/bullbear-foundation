@@ -1,0 +1,8 @@
+---
+import {Image} from 'astro:assets';import {media} from '../data/media';import Arrow from './Arrow.astro';import type {CollectionEntry} from 'astro:content';
+const {activity}=Astro.props as {activity:CollectionEntry<'activities'>};const a=activity.data;
+---
+<article class="activity-card" data-year={a.year} data-category={a.category}>
+ <a href={`/${a.id}/`} class="activity-photo">{a.images[0]?<Image src={media(a.images[0])} alt={a.alt} widths={[360,600,900]} sizes="(max-width: 700px) 92vw, 30vw" width={600} height={450} format="webp" loading="lazy"/>:<div class="image-placeholder">Bull & Bear<br/><em>En comunidad.</em></div>}<span class="photo-arrow"><Arrow diagonal/></span></a>
+ <div class="activity-meta"><span>{a.category}</span><span>{a.dateLabel}</span></div><h3><a href={`/${a.id}/`}>{a.title}</a></h3><p>{a.summary}</p>
+</article>

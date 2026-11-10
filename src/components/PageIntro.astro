@@ -1,0 +1,5 @@
+---
+const {eyebrow,title,description}=Astro.props;
+const safeTitle=String(title).replaceAll('&','&amp;').replaceAll('<','&lt;').replaceAll('>','&gt;').replace(/&lt;(\/?em|br\s*\/?)&gt;/g,'<$1>');
+---
+<section class="page-intro container"><nav class="breadcrumbs" aria-label="Ruta de navegación"><a href="/">Inicio</a><span aria-hidden="true">/</span><span>{eyebrow}</span></nav><p class="eyebrow">{eyebrow}</p><h1 set:html={safeTitle}/>{description&&<p class="intro-description">{description}</p>}</section>
