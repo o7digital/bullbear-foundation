@@ -1,13 +1,17 @@
 ---
 import { Image } from 'astro:assets';
-import originalPhotograph from '../assets/source/853a574a8c-primer-plano-diversas-personas-uniendo-sus-manos.jpg';
+import {studioRecord} from '../data/cms';
+import {media} from '../data/media';
+const hero=studioRecord('site-hero');
+const originalPhotograph=media(hero?.image||'853a574a8c-primer-plano-diversas-personas-uniendo-sus-manos.jpg');
 import '@fontsource/poppins/latin-700.css';
 ---
 <section class="original-hero" aria-labelledby="original-hero-title" data-source="https://www.bullandbear-foundation.com/">
   <Image
     class="original-hero-photograph"
     src={originalPhotograph}
-    alt="Un grupo de personas une sus manos en un gesto de ayuda mutua"
+    alt={hero?.alt||"Un grupo de personas une sus manos en un gesto de ayuda mutua"}
+    style={`object-position:${hero?.position||'50% 50%'}`}
     width={1200}
     height={675}
     widths={[600, 900, 1200]}
@@ -21,9 +25,9 @@ import '@fontsource/poppins/latin-700.css';
     <div class="original-hero-inner">
       <div class="original-hero-frame">
         <div class="original-hero-copy">
-          <h1 id="original-hero-title">Una cultura universal</h1>
-          <p class="original-hero-subtitle">una ayúda mutua</p>
-          <a class="original-hero-button" href="/contacto/">¿Deseas ayudar?</a>
+          <h1 id="original-hero-title">{hero?.title||'Una cultura universal'}</h1>
+          <p class="original-hero-subtitle">{hero?.body||'una ayúda mutua'}</p>
+          <a class="original-hero-button" href={hero?.button_url||'/contacto/'}>{hero?.button_label||'¿Deseas ayudar?'}</a>
         </div>
       </div>
     </div>

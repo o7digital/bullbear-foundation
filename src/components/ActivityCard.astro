@@ -5,7 +5,7 @@ import type { CollectionEntry } from 'astro:content';
 const { activity } = Astro.props as { activity: CollectionEntry<'activities'> };
 const a = activity.data;
 // Unreviewed collages and small source files stay in their full reports.
-const cover = homeStories.find(story => story.href === `/${a.id}/`);
+const cover = a.cover ? {image:a.cover,alt:a.coverAlt||a.title,position:a.position||'50% 0%'} : homeStories.find(story => story.href === `/${a.id}/`);
 const dateLabel = a.dateLabel === 'Fecha no indicada en la fuente' ? 'Fecha no registrada' : a.dateLabel;
 ---
 <article class:list={['activity-card', {'activity-card--text': !cover}]} data-year={a.year} data-category={a.category}>

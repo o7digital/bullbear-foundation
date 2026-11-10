@@ -1,0 +1,382 @@
+[
+  {
+    "id": "copy-e760dcac63b391236501c09b",
+    "kind": "text",
+    "section": "fundacion",
+    "title": "quienes-somos · 2016 — El comienzo",
+    "body": "2016 — El comienzo",
+    "status": "published",
+    "sort": 100,
+    "version": 1
+  },
+  {
+    "id": "copy-50492daf2ea77aff5fe3f8a1",
+    "kind": "text",
+    "section": "fundacion",
+    "title": "quienes-somos · La fundación nace con la iniciativa de brindar apoyo a diferentes grupos vulnerables ",
+    "body": "La fundación nace con la iniciativa de brindar apoyo a diferentes grupos vulnerables y crear una relación cercana que permita comprender y atender sus necesidades.",
+    "status": "published",
+    "sort": 101,
+    "version": 1
+  },
+  {
+    "id": "copy-65b8688f7ec9e000c50e9fc0",
+    "kind": "text",
+    "section": "fundacion",
+    "title": "quienes-somos · Una ayuda mutua",
+    "body": "Una ayuda mutua",
+    "status": "published",
+    "sort": 102,
+    "version": 1
+  },
+  {
+    "id": "copy-c99f0f5b88efa7e24aa71d53",
+    "kind": "text",
+    "section": "fundacion",
+    "title": "quienes-somos · Escuchar a cada persona y trabajar en comunidad es parte de nuestra filosofía. Cada e",
+    "body": "Escuchar a cada persona y trabajar en comunidad es parte de nuestra filosofía. Cada encuentro nos ayuda a entender cómo podemos contribuir.",
+    "status": "published",
+    "sort": 103,
+    "version": 1
+  },
+  {
+    "id": "copy-ec7e169dfa6fb2f2225dcdae",
+    "kind": "text",
+    "section": "fundacion",
+    "title": "quienes-somos · Brindar ayuda a grupos vulnerables, como retribución a nuestra sociedad.",
+    "body": "Brindar ayuda a grupos vulnerables, como retribución a nuestra sociedad.",
+    "status": "published",
+    "sort": 104,
+    "version": 1
+  },
+  {
+    "id": "copy-c0c6f05958af96c7263f4c2b",
+    "kind": "text",
+    "section": "fundacion",
+    "title": "quienes-somos · Nuestra visión",
+    "body": "Nuestra visión",
+    "status": "published",
+    "sort": 105,
+    "version": 1
+  },
+  {
+    "id": "copy-2f8e9abd994e973f1b87cb0a",
+    "kind": "text",
+    "section": "fundacion",
+    "title": "quienes-somos · Ser una fundación sólida, que cuente con la capacidad de desempeñar proyectos de cont",
+    "body": "Ser una fundación sólida, que cuente con la capacidad de desempeñar proyectos de contribución de gran impacto.",
+    "status": "published",
+    "sort": 106,
+    "version": 1
+  },
+  {
+    "id": "copy-86888fda75df1f41fb940526",
+    "kind": "text",
+    "section": "fundacion",
+    "title": "quienes-somos · Lo que guía cada encuentro.",
+    "body": "Lo que guía cada encuentro.",
+    "status": "published",
+    "sort": 107,
+    "version": 1
+  },
+  {
+    "id": "copy-6118854ab8cc5be6415604d5",
+    "kind": "text",
+    "section": "fundacion",
+    "title": "quienes-somos · El equipo directivo presentado en la información institucional de Bull & Bear Foundat",
+    "body": "El equipo directivo presentado en la información institucional de Bull & Bear Foundation.",
+    "status": "published",
+    "sort": 108,
+    "version": 1
+  },
+  {
+    "id": "copy-320dcb7918fe6c553292e3f7",
+    "kind": "text",
+    "section": "fundacion",
+    "title": "quienes-somos · Carlos Reyes",
+    "body": "Carlos Reyes",
+    "status": "published",
+    "sort": 109,
+    "version": 1
+  },
+  {
+    "id": "copy-6cec0b07bc65ee20f79ef428",
+    "kind": "text",
+    "section": "fundacion",
+    "title": "quienes-somos · Presidente, según la página institucional de origen.",
+    "body": "Presidente, según la página institucional de origen.",
+    "status": "published",
+    "sort": 110,
+    "version": 1
+  },
+  {
+    "id": "copy-10563199474cc0d2410c7267",
+    "kind": "text",
+    "section": "fundacion",
+    "title": "quienes-somos · Rodrigo Pérez",
+    "body": "Rodrigo Pérez",
+    "status": "published",
+    "sort": 111,
+    "version": 1
+  },
+  {
+    "id": "copy-d877e7e252786a00b34b4f9f",
+    "kind": "text",
+    "section": "fundacion",
+    "title": "quienes-somos · Secretario, según la página institucional de origen.",
+    "body": "Secretario, según la página institucional de origen.",
+    "status": "published",
+    "sort": 112,
+    "version": 1
+  },
+  {
+    "id": "copy-6aac6b4c992fa8abeca5aaf7",
+    "kind": "text",
+    "section": "participar",
+    "title": "como-ayudar · Voluntariado",
+    "body": "Voluntariado",
+    "status": "published",
+    "sort": 113,
+    "version": 1
+  },
+  {
+    "id": "copy-9077f2d2881e1b1baa95d8ce",
+    "kind": "text",
+    "section": "participar",
+    "title": "como-ayudar · Participa en actividades de acompañamiento, talleres y encuentros. Cuéntanos tus inte",
+    "body": "Participa en actividades de acompañamiento, talleres y encuentros. Cuéntanos tus intereses y habilidades para conocer las posibilidades de colaboración.",
+    "status": "published",
+    "sort": 114,
+    "version": 1
+  },
+  {
+    "id": "copy-2f607e429ebb1f62d67700f1",
+    "kind": "text",
+    "section": "participar",
+    "title": "como-ayudar · Haz un donativo",
+    "body": "Haz un donativo",
+    "status": "published",
+    "sort": 115,
+    "version": 1
+  },
+  {
+    "id": "copy-04adb1c35024be02908e2d1c",
+    "kind": "text",
+    "section": "participar",
+    "title": "como-ayudar · Apoya el trabajo de la fundación con una aportación. Consulta el canal de donación y ",
+    "body": "Apoya el trabajo de la fundación con una aportación. Consulta el canal de donación y pregunta por los apoyos en especie que se necesitan antes de organizar una entrega.",
+    "status": "published",
+    "sort": 116,
+    "version": 1
+  },
+  {
+    "id": "copy-d33d7e432dbb1646a68c2ea6",
+    "kind": "text",
+    "section": "participar",
+    "title": "como-ayudar · Suma a tu comunidad",
+    "body": "Suma a tu comunidad",
+    "status": "published",
+    "sort": 117,
+    "version": 1
+  },
+  {
+    "id": "copy-4cde7af348e3b1081386373d",
+    "kind": "text",
+    "section": "participar",
+    "title": "como-ayudar · Comparte nuestra labor o propón una colaboración desde tu empresa, escuela o grupo. C",
+    "body": "Comparte nuestra labor o propón una colaboración desde tu empresa, escuela o grupo. Conversemos para encontrar una forma de participar juntos.",
+    "status": "published",
+    "sort": 118,
+    "version": 1
+  },
+  {
+    "id": "copy-7cdf672aa0b91849f0329143",
+    "kind": "text",
+    "section": "participar",
+    "title": "como-ayudar · Las necesidades de cada institución y de cada actividad son distintas. Contáctanos an",
+    "body": "Las necesidades de cada institución y de cada actividad son distintas. Contáctanos antes de reunir productos o programar una visita para confirmar qué se necesita y cómo hacerlo llegar.",
+    "status": "published",
+    "sort": 119,
+    "version": 1
+  },
+  {
+    "id": "copy-14e5692048310c68ba8317cc",
+    "kind": "text",
+    "section": "participar",
+    "title": "voluntariado · Demos el primer paso.",
+    "body": "Demos el primer paso.",
+    "status": "published",
+    "sort": 120,
+    "version": 1
+  },
+  {
+    "id": "copy-499ee0e702e8bed140dea8c3",
+    "kind": "text",
+    "section": "participar",
+    "title": "voluntariado · Cuéntanos de ti",
+    "body": "Cuéntanos de ti",
+    "status": "published",
+    "sort": 121,
+    "version": 1
+  },
+  {
+    "id": "copy-ef1673a0961d2524a32974a5",
+    "kind": "text",
+    "section": "participar",
+    "title": "voluntariado · Escríbenos con tus intereses, habilidades y disponibilidad.",
+    "body": "Escríbenos con tus intereses, habilidades y disponibilidad.",
+    "status": "published",
+    "sort": 122,
+    "version": 1
+  },
+  {
+    "id": "copy-72f5b15b21672fc0f91da6ef",
+    "kind": "text",
+    "section": "participar",
+    "title": "voluntariado · Conoce las oportunidades",
+    "body": "Conoce las oportunidades",
+    "status": "published",
+    "sort": 123,
+    "version": 1
+  },
+  {
+    "id": "copy-09c6659fe20b3ff4e6daa62d",
+    "kind": "text",
+    "section": "participar",
+    "title": "voluntariado · El equipo te orientará sobre las actividades y necesidades actuales.",
+    "body": "El equipo te orientará sobre las actividades y necesidades actuales.",
+    "status": "published",
+    "sort": 124,
+    "version": 1
+  },
+  {
+    "id": "copy-99f6b6f01ce8875a07942cd3",
+    "kind": "text",
+    "section": "participar",
+    "title": "voluntariado · Prepárate para acompañar",
+    "body": "Prepárate para acompañar",
+    "status": "published",
+    "sort": 125,
+    "version": 1
+  },
+  {
+    "id": "copy-5d8331de1c3304c2f55e910e",
+    "kind": "text",
+    "section": "participar",
+    "title": "voluntariado · Coordina los siguientes pasos con la fundación antes de acudir a una actividad.",
+    "body": "Coordina los siguientes pasos con la fundación antes de acudir a una actividad.",
+    "status": "published",
+    "sort": 126,
+    "version": 1
+  },
+  {
+    "id": "copy-f224010e7787c99cbf5304e9",
+    "kind": "text",
+    "section": "participar",
+    "title": "voluntariado · Coordina tu disponibilidad y los siguientes pasos directamente con el equipo de la fu",
+    "body": "Coordina tu disponibilidad y los siguientes pasos directamente con el equipo de la fundación.",
+    "status": "published",
+    "sort": 127,
+    "version": 1
+  },
+  {
+    "id": "copy-75b7c438da36759db4d4ec4a",
+    "kind": "text",
+    "section": "contacto",
+    "title": "contacto · Escríbenos",
+    "body": "Escríbenos",
+    "status": "published",
+    "sort": 128,
+    "version": 1
+  },
+  {
+    "id": "copy-4c40604ba1b9e3c0d3241b44",
+    "kind": "text",
+    "section": "contacto",
+    "title": "contacto · Llámanos",
+    "body": "Llámanos",
+    "status": "published",
+    "sort": 129,
+    "version": 1
+  },
+  {
+    "id": "copy-dd250bb50649cb8960cb23ff",
+    "kind": "text",
+    "section": "contacto",
+    "title": "contacto · Encuéntranos",
+    "body": "Encuéntranos",
+    "status": "published",
+    "sort": 130,
+    "version": 1
+  },
+  {
+    "id": "copy-a54c8d1b19fe3613dc4dfe11",
+    "kind": "text",
+    "section": "contacto",
+    "title": "contacto · Ponte en contacto con el equipo para coordinar una visita.",
+    "body": "Ponte en contacto con el equipo para coordinar una visita.",
+    "status": "published",
+    "sort": 131,
+    "version": 1
+  },
+  {
+    "id": "copy-b46b8886f6ca3d836408eae7",
+    "kind": "text",
+    "section": "contacto",
+    "title": "contacto · ¿Quieres organizar una colecta, compartir tus habilidades o participar con tu comunid",
+    "body": "¿Quieres organizar una colecta, compartir tus habilidades o participar con tu comunidad? Cuéntanos qué tienes en mente.",
+    "status": "published",
+    "sort": 132,
+    "version": 1
+  },
+  {
+    "id": "copy-44d33a8f92ed1563fadf6752",
+    "kind": "text",
+    "section": "participar",
+    "title": "donar-ahora · Gracias por querer ayudar.",
+    "body": "Gracias por querer ayudar.",
+    "status": "published",
+    "sort": 133,
+    "version": 1
+  },
+  {
+    "id": "copy-b9782fbd7a658997b33a26a5",
+    "kind": "text",
+    "section": "participar",
+    "title": "donar-ahora · Las aportaciones se realizan a través del formulario de donación de la fundación.",
+    "body": "Las aportaciones se realizan a través del formulario de donación de la fundación.",
+    "status": "published",
+    "sort": 134,
+    "version": 1
+  },
+  {
+    "id": "copy-0173e684151d335731ca6751",
+    "kind": "text",
+    "section": "participar",
+    "title": "donar-ahora · Antes de confirmar tu aportación, revisa la moneda, el importe y la información del f",
+    "body": "Antes de confirmar tu aportación, revisa la moneda, el importe y la información del formulario de destino.",
+    "status": "published",
+    "sort": 135,
+    "version": 1
+  },
+  {
+    "id": "copy-7c62d83711ce5ca9bb209f5e",
+    "kind": "text",
+    "section": "participar",
+    "title": "donar-ahora · Sí puedes acercarte al equipo para conocer las necesidades de las actividades. Confir",
+    "body": "Sí puedes acercarte al equipo para conocer las necesidades de las actividades. Confirma qué artículos se requieren antes de organizar una recolección o entrega.",
+    "status": "published",
+    "sort": 136,
+    "version": 1
+  },
+  {
+    "id": "copy-8b4c11c4c78bf663b53d9b6f",
+    "kind": "text",
+    "section": "participar",
+    "title": "donar-ahora · Contacta directamente a la fundación para confirmar los requisitos y la documentación",
+    "body": "Contacta directamente a la fundación para confirmar los requisitos y la documentación aplicable a tu aportación.",
+    "status": "published",
+    "sort": 137,
+    "version": 1
+  }
+]

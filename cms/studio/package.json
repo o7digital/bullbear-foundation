@@ -1,0 +1,1 @@
+{"name":"bull-bear-foundation-studio","private":true,"type":"module","engines":{"node":">=22"},"scripts":{"start":"node server.mjs","check":"node --check server.mjs && node --check public/app.js && node --check content.mjs","test":"node --test *.test.mjs"},"dependencies":{"sharp":"^0.35.5"}}

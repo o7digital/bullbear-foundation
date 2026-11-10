@@ -7,13 +7,16 @@
     "node": ">=22.23.4"
   },
   "scripts": {
-    "dev": "astro dev --host 127.0.0.1",
-    "build": "node scripts/configure-hosting.mjs && astro build && node scripts/map-media.mjs",
+    "dev": "node cms/sync.mjs && astro dev --host 127.0.0.1",
+    "build": "node cms/sync.mjs && node scripts/configure-hosting.mjs && astro build && node scripts/map-media.mjs",
     "preview": "astro preview --host 127.0.0.1",
     "check": "astro check",
     "test": "node --test tests/*.test.mjs",
     "test:browser": "node scripts/browser-qa.mjs",
-    "package": "node scripts/package.mjs"
+    "package": "node scripts/package.mjs",
+    "cms:sync": "node cms/sync.mjs",
+    "cms:test": "npm --prefix cms/studio test",
+    "cms:deploy": "node scripts/deploy-studio.mjs"
   },
   "dependencies": {
     "@astrojs/react": "7.1.5",

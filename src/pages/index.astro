@@ -1,4 +1,5 @@
 ---
+import {studioText,studioRecord} from '../data/cms';
 import Layout from '../layouts/Layout.astro';
 import OriginalHero from '../components/OriginalHero.astro';
 import EditorialPhoto from '../components/EditorialPhoto.astro';
@@ -6,21 +7,25 @@ import { getCollection } from 'astro:content';
 import { homeStories, homePrograms, participationPhoto } from '../data/home';
 import { site } from '../data/site';
 import '../styles/home.css';
-const [lead, ...secondary] = homeStories;
+const activeActivities=new Set((await getCollection('activities')).map(a=>a.id));
+const activePrograms=new Set((await getCollection('programs')).map(p=>p.id));
+const [lead, ...secondary] = homeStories.filter(story=>activeActivities.has(story.href.split('/')[1])).map(story=>{const row=studioRecord(story.href.split('/')[1]);return row?{...story,...(row.edited?{title:row.title,summary:row.summary||story.summary}:{}),image:row.image||story.image,alt:row.alt||story.alt,position:row.position||story.position}:story;});
+const programs=homePrograms.filter(p=>activePrograms.has(p.id)).map(p=>{const row=studioRecord('program-'+p.id);return row?{...p,title:row.title,text:row.summary||p.text,image:row.image||p.image,alt:row.alt||p.alt,position:row.position||p.position}:p;});
+const participation=studioRecord('participation-photo');
 const documents = await getCollection('documents');
-const selectedDocuments = ['archivo-1', 'archivo-0', 'acuse-sat'].map(id => documents.find(document => document.id === id)!);
+const selectedDocuments = ['archivo-1', 'archivo-0', 'acuse-sat'].map(id => documents.find(document => document.id === id)).filter((document):document is NonNullable<typeof document> => Boolean(document));
 ---
 <Layout title="Fundación Bull & Bear | Ayuda y voluntariado en México" description="Conoce los talleres, las acciones de apoyo y el voluntariado de Fundación Bull & Bear. Participa y acompaña a personas en situación de vulnerabilidad en México.">
   <OriginalHero />
 
   <section class="home-introduction container" aria-labelledby="introduction-title">
     <div class="home-introduction-label"><h2 id="introduction-title">Fundación<br/>Bull & Bear A.C.</h2><p>Desde 2016 · México</p></div>
-    <div class="home-introduction-copy"><p>Acompañamos a niñas, niños, jóvenes y personas mayores en situación de vulnerabilidad. Lo hacemos con apoyo social, talleres y tiempo compartido.</p><a class="home-link" href="/quienes-somos/">Conoce la fundación</a></div>
+    <div class="home-introduction-copy"><p>{studioText('home-introduction','Acompañamos a niñas, niños, jóvenes y personas mayores en situación de vulnerabilidad. Lo hacemos con apoyo social, talleres y tiempo compartido.')}</p><a class="home-link" href="/quienes-somos/">Conoce la fundación</a></div>
   </section>
 
   <section class="home-programmes container" aria-labelledby="programmes-title">
-    <div class="home-section-heading"><div><p class="home-kicker">Nuestra labor</p><h2 id="programmes-title">Apoyo social.<br/>Aprendizaje y compañía.</h2></div><p>Trabajamos con casas hogar, residencias y otras instituciones para atender necesidades concretas y crear espacios de encuentro.</p></div>
-    <div class="home-programme-grid">{homePrograms.map(programme => <article class="home-programme">
+    <div class="home-section-heading"><div><p class="home-kicker">Nuestra labor</p><h2 id="programmes-title">{studioText('home-programmes','Apoyo social. Aprendizaje y compañía.','title')}</h2></div><p>{studioText('home-programmes',"Trabajamos con casas hogar, residencias y otras instituciones para atender necesidades concretas y crear espacios de encuentro.")}</p></div>
+    <div class="home-programme-grid">{programs.map(programme => <article class="home-programme">
       <a href={`/programas/#${programme.id}`} aria-label={`Conoce ${programme.title}`}><EditorialPhoto file={programme.image} alt={programme.alt} position={programme.position} sizes="(max-width: 767px) 90vw, 30vw"/></a>
       <h3><a href={`/programas/#${programme.id}`}>{programme.title}</a></h3><p>{programme.text}</p>
     </article>)}</div>
@@ -28,13 +33,13 @@ const selectedDocuments = ['archivo-1', 'archivo-0', 'acuse-sat'].map(id => docu
   </section>
 
   <section class="home-activities" aria-labelledby="activities-title"><div class="container">
-    <div class="home-section-heading"><div><p class="home-kicker">Encuentros y actividades</p><h2 id="activities-title">Lectura, creatividad y convivencia.</h2></div><a class="home-link" href="/actividades-bb-foundation/">Todas las actividades</a></div>
+    <div class="home-section-heading"><div><p class="home-kicker">Encuentros y actividades</p><h2 id="activities-title">{studioText('home-activities','Lectura, creatividad y convivencia.','title')}</h2></div><a class="home-link" href="/actividades-bb-foundation/">Todas las actividades</a></div>
     <div class="home-stories">
-      <article class="home-story-lead">
+      {lead&&<article class="home-story-lead">
         <a href={lead.href} aria-label={lead.title}><EditorialPhoto file={lead.image} alt={lead.alt} position={lead.position} sizes="(max-width: 767px) 90vw, 56vw"/></a>
         <div class="home-story-date"><time datetime={lead.dateTime}>{lead.date}</time><span>{lead.place}</span></div>
         <h3><a href={lead.href}>{lead.title}</a></h3><p>{lead.summary}</p><a class="home-link" href={lead.href}>Leer el relato</a>
-      </article>
+      </article>}
       <div class="home-stories-secondary">{secondary.map(story => <article class="home-story-secondary">
         <a href={story.href} aria-label={story.title}><EditorialPhoto file={story.image} alt={story.alt} position={story.position} sizes="(max-width: 767px) 36vw, 17vw"/></a>
         <div><time datetime={story.dateTime}>{story.date}</time><h3><a href={story.href}>{story.title}</a></h3><p>{story.summary}</p><span class="home-story-place">{story.place}</span></div>
@@ -44,7 +49,7 @@ const selectedDocuments = ['archivo-1', 'archivo-0', 'acuse-sat'].map(id => docu
   </div></section>
 
   <section class="home-documents container" aria-labelledby="documents-title">
-    <div class="home-documents-intro"><p class="home-kicker">Transparencia</p><h2 id="documents-title">Documentos<br/>para conocer nuestra labor.</h2><p>Constancias, reconocimientos e información institucional, con las fechas que les corresponden.</p><a class="home-link" href="/transparencia/">Ver toda la documentación</a><p class="home-document-note">Para solicitar originales o información actualizada, ponte en contacto con la fundación.</p></div>
+    <div class="home-documents-intro"><p class="home-kicker">Transparencia</p><h2 id="documents-title">{studioText('home-documents','Documentos para conocer nuestra labor.','title')}</h2><p>{studioText('home-documents',"Constancias, reconocimientos e información institucional, con las fechas que les corresponden.")}</p><a class="home-link" href="/transparencia/">Ver toda la documentación</a><p class="home-document-note">Para solicitar originales o información actualizada, ponte en contacto con la fundación.</p></div>
     <div class="home-document-list">{selectedDocuments.map(document => <article class="home-document-row">
       <a class="home-document-thumbnail" href={document.data.file} target="_blank" rel="noopener noreferrer" aria-label={`Ver ${document.data.title}`}><img src={document.data.file} width="110" height="140" alt={document.data.title} loading="lazy"/></a>
       <div><p class="home-document-date">{document.data.dateLabel}</p><h3>{document.data.title}</h3><a class="home-link" href={document.data.file} target="_blank" rel="noopener noreferrer">Ver documento<span class="sr-only">: {document.data.title}</span></a></div>
@@ -52,9 +57,9 @@ const selectedDocuments = ['archivo-1', 'archivo-0', 'acuse-sat'].map(id => docu
   </section>
 
   <section class="home-participation" aria-labelledby="participation-title"><div class="container home-participation-grid">
-    <div class="home-participation-copy"><p class="home-kicker">Participa</p><h2 id="participation-title">Participa como voluntario<br/>o apoya una actividad.</h2><p>¿Te gustaría acompañar una actividad, compartir una habilidad o colaborar desde tu empresa? Cuéntanos qué puedes aportar y coordinemos el siguiente paso.</p><div class="home-participation-actions"><a class="button button-light" href="/voluntariado/">Ser voluntario</a><a class="button home-donation-button" href="/donar-ahora/">Hacer un donativo</a></div><a class="home-link" href="/contacto/">Proponer una colaboración</a></div>
-    <figure class="home-participation-photo"><EditorialPhoto file={participationPhoto.image} alt={participationPhoto.alt} ratio="4 / 5" position="50% 12%" sizes="(max-width: 767px) 90vw, 42vw"/><figcaption>{participationPhoto.caption}</figcaption></figure>
+    <div class="home-participation-copy"><p class="home-kicker">Participa</p><h2 id="participation-title">{studioText('home-participation','Participa como voluntario o apoya una actividad.','title')}</h2><p>{studioText('home-participation',"¿Te gustaría acompañar una actividad, compartir una habilidad o colaborar desde tu empresa? Cuéntanos qué puedes aportar y coordinemos el siguiente paso.")}</p><div class="home-participation-actions"><a class="button button-light" href="/voluntariado/">Ser voluntario</a><a class="button home-donation-button" href="/donar-ahora/">Hacer un donativo</a></div><a class="home-link" href="/contacto/">Proponer una colaboración</a></div>
+    <figure class="home-participation-photo"><EditorialPhoto file={participation?.image||participationPhoto.image} alt={participation?.alt||participationPhoto.alt} ratio="4 / 5" position={participation?.position||'50% 12%'} sizes="(max-width: 767px) 90vw, 42vw"/><figcaption>{participation?.title||participationPhoto.caption}</figcaption></figure>
   </div></section>
 
-  <section class="home-contact container" aria-labelledby="contact-title"><div><p class="home-kicker">Contacto</p><h2 id="contact-title">Hablemos de cómo ayudar.</h2><a class="home-link" href="/contacto/">Datos de contacto y ubicación</a></div><div class="home-contact-details"><a href={`mailto:${site.email}`}>{site.email}</a><a href="tel:+525536888077">{site.phone}</a><p>Insurgentes Sur 716, piso 8.<br/>Col. Del Valle, Ciudad de México.</p></div></section>
+  <section class="home-contact container" aria-labelledby="contact-title"><div><p class="home-kicker">Contacto</p><h2 id="contact-title">{studioText('home-contact','Hablemos de cómo ayudar.','title')}</h2><a class="home-link" href="/contacto/">Datos de contacto y ubicación</a></div><div class="home-contact-details"><a href={`mailto:${site.email}`}>{site.email}</a><a href="tel:+525536888077">{site.phone}</a><p>Insurgentes Sur 716, piso 8.<br/>Col. Del Valle, Ciudad de México.</p></div></section>
 </Layout>

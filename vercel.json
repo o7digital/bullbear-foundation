@@ -4,6 +4,16 @@
   "outputDirectory": "dist",
   "redirects": [
     {
+      "source": "/studio",
+      "destination": "https://bull-bear-foundation-studio.up.railway.app",
+      "statusCode": 307
+    },
+    {
+      "source": "/studio/",
+      "destination": "https://bull-bear-foundation-studio.up.railway.app",
+      "statusCode": 307
+    },
+    {
       "source": "/actividades",
       "destination": "/actividades-bb-foundation/",
       "statusCode": 301
@@ -501,6 +511,11 @@
     {
       "source": "/transparencia",
       "destination": "/transparencia/",
+      "statusCode": 308
+    },
+    {
+      "source": "/videos",
+      "destination": "/videos/",
       "statusCode": 308
     },
     {

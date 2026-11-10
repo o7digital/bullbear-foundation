@@ -66,3 +66,7 @@ La procédure de bascule et de retour arrière est dans `migration/CUTOVER.md`. 
 ## Livraison ZIP
 
 Après commit, `npm run package` produit `artifacts/Bull_Bear_Foundation_Astro_React.zip` depuis l'état Git commité : ni `.env`, ni `.vercel`, ni secrets, ni `node_modules`, ni dépendances installées. Le ZIP contient les sources, le lockfile et les originaux de migration ; il n'inclut pas le build généré.
+
+## Foundation Studio
+
+Administration : https://bull-bear-foundation-studio.up.railway.app/. Le Studio permet d'éditer les récits, programmes, documents et principaux textes, d'ajouter des vidéos par URL et d'envoyer des photographies. Les contenus sont enregistrés dans un CMS Foundation indépendant et publiés sur la prévisualisation Vercel depuis le Studio. Accès, configuration, limites et vérifications : [cms/README.md](cms/README.md).

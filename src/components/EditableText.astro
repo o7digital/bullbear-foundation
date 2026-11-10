@@ -1,0 +1,6 @@
+---
+import {studioText} from '../data/cms';
+interface Props{as?:'p'|'h2'|'h3';contentId:string;fallback:string;class?:string;style?:string;}
+const {as:Tag='p',contentId,fallback,...attributes}=Astro.props;
+---
+<Tag {...attributes}>{studioText(contentId,fallback)}</Tag>

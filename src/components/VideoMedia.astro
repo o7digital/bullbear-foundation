@@ -1,0 +1,7 @@
+---
+import {videoDetails} from '../../cms/studio/public/media.js';
+const {video,title,summary=''}=Astro.props as {video:string;title:string;summary?:string};
+const details=videoDetails(video);
+---
+<article class="foundation-video">{details?.embed?<iframe src={details.embed} title={title} loading="lazy" allow="fullscreen; picture-in-picture" allowfullscreen referrerpolicy="strict-origin-when-cross-origin"/>:details?.type==='file'?<video src={details.url} controls preload="metadata" aria-label={title}/>:details?<a class="button" href={details.url} target="_blank" rel="noopener noreferrer">Ver en {details.label} ↗</a>:null}<h3>{title}</h3>{summary&&<p>{summary}</p>}</article>
+<style>.foundation-video{min-width:0}.foundation-video iframe,.foundation-video video{display:block;width:100%;aspect-ratio:16/9;border:0;background:#143c2e}.foundation-video h3{margin:16px 0 8px}.foundation-video p{font-size:1rem;line-height:1.7}</style>

@@ -1,0 +1,5 @@
+---
+import Layout from '../layouts/Layout.astro';import PageIntro from '../components/PageIntro.astro';import StudioMedia from '../components/StudioMedia.astro';import {studioMedia} from '../data/cms';
+const videos=studioMedia('videos');
+---
+<Layout title="Vídeos de nuestras acciones | Fundación Bull & Bear" description="Conoce las acciones y los encuentros de Fundación Bull & Bear en vídeo. Talleres, convivencia y formas de participar."><PageIntro eyebrow="Vídeos" title="Nuestros encuentros,<br/>en movimiento." description="Una mirada a las actividades y a las personas que acompañan a la fundación."/>{videos.length?<StudioMedia section="videos" title="Lo que compartimos"/>:<div class="container page-body"><p>Pronto compartiremos nuevos vídeos de nuestras actividades. Mientras tanto, conoce los encuentros de la fundación en nuestra galería.</p><a class="text-link" href="/galeria/">Explorar la galería ↗</a></div>}</Layout>

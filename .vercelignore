@@ -11,3 +11,6 @@ dist/
 .astro/
 node_modules/
 .vercel/
+cms/studio/public/library/
+cms/studio/public/library.json
+cms/studio/node_modules/

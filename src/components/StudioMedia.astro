@@ -1,0 +1,6 @@
+---
+import {studioMedia} from '../data/cms';import EditorialPhoto from './EditorialPhoto.astro';import VideoMedia from './VideoMedia.astro';
+const {section,title='Encuentros para compartir'}=Astro.props as {section:string;title?:string};const records=studioMedia(section);
+---
+{records.length>0&&<section class="container studio-media-section"><p class="eyebrow">Fotos y vídeos</p><h2>{title}</h2><div class="studio-media-grid">{records.map(row=>row.kind==='video'&&row.video?<VideoMedia video={row.video} title={row.title} summary={row.summary||row.body}/>:row.image?<figure><EditorialPhoto file={row.image} alt={row.alt||row.title} position={row.position}/><figcaption><h3>{row.title}</h3>{row.body&&<p>{row.body}</p>}</figcaption></figure>:null)}</div></section>}
+<style>.studio-media-section{padding-block:60px}.studio-media-grid{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:30px;margin-top:35px}.studio-media-grid figure{margin:0}.studio-media-grid figcaption{padding-top:16px}.studio-media-grid p{font-size:1rem;margin-top:8px}@media(max-width:1000px){.studio-media-grid{grid-template-columns:repeat(2,minmax(0,1fr))}}@media(max-width:700px){.studio-media-grid{grid-template-columns:1fr}}</style>

@@ -1,7 +1,8 @@
 import type { ImageMetadata } from 'astro';
 const all = import.meta.glob<{default: ImageMetadata}>('../assets/source/*', {eager:true});
 export function media(file:string):ImageMetadata {
- const asset = all[`../assets/source/${file}`];
+ const uploaded = import.meta.glob<{default: ImageMetadata}>('../assets/cms/*', {eager:true});
+ const asset = all[`../assets/source/${file}`] || uploaded[`../assets/cms/${file}`];
  if(!asset) throw new Error(`Missing local media: ${file}`);
  return asset.default;
 }

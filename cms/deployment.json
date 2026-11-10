@@ -1,0 +1,15 @@
+{
+  "project": "bullbear-foundation-studio",
+  "project_id": "a2bbb6a0-3f01-4a62-ac84-7b5f0e583949",
+  "environment": "production",
+  "environment_id": "43c8086c-e573-4d33-ad10-8202123ee2d7",
+  "services": {
+    "database": "87818075-8de5-4c80-8edd-e9bee55d40ec",
+    "directus": "26434377-b5dd-43bb-aa2f-243de7d38014",
+    "studio": "e7cafecc-b0dd-48d2-94b4-4b89347b4fd2"
+  },
+  "directus_url": "https://directus-production-ab285531.up.railway.app",
+  "studio_url": "https://bull-bear-foundation-studio.up.railway.app",
+  "website_preview_url": "https://bullbear-foundation-preview.vercel.app",
+  "website_branch": "main"
+}

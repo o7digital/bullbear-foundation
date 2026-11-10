@@ -7,3 +7,10 @@ dist/
 !.env.example
 artifacts/
 .DS_Store
+
+# Generated CMS snapshots, downloaded photos and Studio originals
+src/data/cms*.generated.json
+src/assets/cms/
+public/_foundation/
+cms/studio/public/library/
+cms/studio/public/library.json
