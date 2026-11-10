@@ -58,3 +58,5 @@ Les tests du serveur couvrent la session, le refus d'origine étrangère, la per
 Le 10 novembre 2026 : neuf tests automatisés (site et serveur), build Astro, contrôle TypeScript et recette Firefox de 360 à 1 440 px. Une vidéo par lien `www.`, deux uploads réels, les descriptions et les actions groupées ont été vérifiés dans le Studio en ligne. Un build relié au CMS a aussi généré une photo téléversée, un lecteur vidéo et une nouvelle activité à URL lisible. Les fiches, fichiers et comptes de recette sont supprimés après vérification.
 
 La politique Vercel de ce projet exige une signature de commit vérifiée pour les déploiements Git et les Deploy Hooks. Les livraisons destinées au bouton de publication doivent respecter cette politique ; la règle de sécurité reste activée.
+
+Pour les livraisons sans clé de signature locale, la mutation GraphQL GitHub `createCommitOnBranch` permet de créer un commit signé par GitHub avec le compte authentifié. Vérifier ensuite `commit.verification.verified` avant de lancer le Deploy Hook.
