@@ -1,0 +1,16 @@
+import fs from 'node:fs';import path from 'node:path';
+const base=process.argv[2];if(!base)throw Error('Provide deployment URL');
+const walk=d=>fs.readdirSync(d,{withFileTypes:true}).flatMap(e=>e.isDirectory()?walk(path.join(d,e.name)):[path.join(d,e.name)]);
+const routes=walk('dist').filter(f=>f.endsWith('.html')&&!f.endsWith('404.html')).map(f=>'/'+path.relative('dist',f).replace(/index\.html$/,''));
+const results=[];let cursor=0;
+async function worker(){while(cursor<routes.length){const route=routes[cursor++];const response=await fetch(base+route);const html=await response.text();if(response.status!==200||!html.includes('noindex')||!response.headers.get('x-robots-tag')?.includes('noindex'))throw Error(`Route ${route}: status=${response.status}, expected 200 and noindex in HTML/header`);results.push({route,status:response.status,noindex:true});}}
+await Promise.all([worker(),worker(),worker(),worker()]);
+const redirects=JSON.parse(fs.readFileSync('migration/redirect-map.json'));const redirectResults=[];
+for(const r of redirects){const res=await fetch(base+r.source,{redirect:'manual'});const location=res.headers.get('location');if(res.status!==301)throw Error(`Redirect ${r.source}: ${res.status} ${location}`);const expected=new URL(r.destination,base);const actual=new URL(location,base);if(actual.pathname!==expected.pathname||actual.hash!==expected.hash)throw Error(`Wrong redirect ${r.source}: ${location}`);const target=await fetch(new URL(actual.pathname,base));if(target.status!==200)throw Error('Redirect target failed '+actual.pathname);const bare=await fetch(base+r.source.replace(/\/$/,''),{redirect:'manual'});if(bare.status!==301)throw Error('Bare legacy path must redirect directly: '+r.source);redirectResults.push({source:r.source,status:res.status,location,withoutTrailingSlash:bare.status});}
+const mappings=Object.entries(JSON.parse(fs.readFileSync('src/data/legacy-media.json')));const media=[];
+for(const [source,destination] of [mappings[0],mappings[10],mappings[100],mappings[500],mappings.at(-1)]){const res=await fetch(base+source,{redirect:'manual'});if(res.status!==301)throw Error(`Legacy media ${source}: ${res.status}`);const location=res.headers.get('location');if(new URL(location,base).pathname!==destination)throw Error('Wrong media location '+location);const image=await fetch(base+destination);if(image.status!==200||!image.headers.get('content-type')?.startsWith('image/'))throw Error('Media target unavailable '+destination);media.push({source,status:301,destination,targetStatus:image.status});}
+const missing=await fetch(base+'/esta-pagina-no-existe/');if(missing.status!==404)throw Error('Missing route must return 404');
+const robots=await fetch(base+'/robots.txt');if(!(await robots.text()).includes('Disallow: /'))throw Error('Preview robots must disallow');
+const sitemap=await fetch(base+'/sitemap-index.xml');if(sitemap.status!==200)throw Error('Missing sitemap');
+const result={checkedAt:new Date().toISOString(),base,passed:true,routes:results.sort((a,b)=>a.route.localeCompare(b.route)),redirects:redirectResults,legacyMedia:media,unknownRoute:404,robots:'Disallow: /',sitemap:200};
+fs.writeFileSync('migration/reports/deployment.json',JSON.stringify(result,null,2)+'\n');console.log(JSON.stringify({passed:true,base,routes:results.length,redirects:redirectResults.length,media:media.length}));

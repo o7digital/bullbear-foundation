@@ -52,7 +52,7 @@ Le contact et le bénévolat utilisent des liens mailto/tel réels. Aucun formul
 
 ## Déploiement
 
-La préproduction est prévue sur un projet Vercel distinct : `bullbear-foundation-preview`. Le domaine public WordPress n'est pas modifié. L'identité locale Vercel est dans `.vercel/` et reste ignorée ; la configuration portable est dans `vercel.json`.
+Préproduction : https://bullbear-foundation-preview.vercel.app/ — projet Vercel distinct `bullbear-foundation-preview`. Le domaine public WordPress n'est pas modifié. L'identité locale Vercel est dans `.vercel/` et reste ignorée ; la configuration portable est dans `vercel.json`.
 
 ```sh
 vercel link --project bullbear-foundation-preview --scope olivier-steineur

@@ -7,3 +7,7 @@ artifacts/
 .git/
 .env*
 !.env.example
+dist/
+.astro/
+node_modules/
+.vercel/
