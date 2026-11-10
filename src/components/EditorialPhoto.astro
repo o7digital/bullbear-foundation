@@ -1,0 +1,16 @@
+---
+import { Image } from 'astro:assets';
+import { media } from '../data/media';
+interface Props {file:string;alt:string;position?:string;sizes?:string;ratio?:string;}
+const {file,alt,position='50% 50%',sizes='(max-width: 767px) 90vw, 40vw',ratio='16 / 9'}=Astro.props;
+const asset=media(file);
+const widths=[...new Set([...([320,480,640,960,1280,1600].filter(width=>width<=asset.width)),Math.min(1600,asset.width)])].sort((a,b)=>a-b);
+const width=Math.min(1280,asset.width);
+---
+<div class="editorial-photo" style={`--photo-position:${position};--photo-ratio:${ratio}`} data-image-file={file} data-source-width={asset.width}>
+  <Image src={asset} alt={alt} width={width} height={Math.round(width*asset.height/asset.width)} widths={widths.length?widths:[asset.width]} sizes={sizes} format="webp" quality={85} loading="lazy"/>
+</div>
+<style>
+  .editorial-photo{position:relative;overflow:hidden;aspect-ratio:var(--photo-ratio);background:#e6e9df;}
+  .editorial-photo img{width:100%;height:100%;object-fit:cover;object-position:var(--photo-position);}
+</style>

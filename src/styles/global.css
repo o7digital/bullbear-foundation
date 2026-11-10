@@ -3,3 +3,24 @@
 .hero-description,.section-heading p,.program-card p,.activity-card>p,.split-copy>p,.transparency-inner p,.participate>p,.program-detail p,.help-card p,.donation-panel p,.steps p,.contact-card p,.contact-aside p,.faq details p,.legal-copy,.document-card p{font-size:1rem}
 @media(max-width:1099px){html:not(.js) .site-header{height:auto}html:not(.js) .header-inner{flex-wrap:wrap;padding-block:18px;gap:12px}html:not(.js) .site-header nav{width:100%;flex-wrap:wrap;gap:10px 20px}html:not(.js) .menu-toggle{display:none}}
 .section-heading .eyebrow,.transparency-inner .eyebrow{font-size:.7rem;max-width:none}.section-heading .eyebrow{color:var(--ink)}
+/* Readable shared navigation and quieter institutional footer. */
+.site-header nav{font-size:1rem;gap:24px}
+.site-header nav>a:not(.button){font-size:1rem;font-weight:500}
+.site-header .brand{width:230px}
+.site-header .button-small{font-size:1rem;min-height:48px;padding:14px 23px;gap:0}
+.footer-grid a:not(.footer-brand a){font-size:.92rem;line-height:1.6;margin-bottom:10px}
+.footer-grid p{font-size:.9rem;line-height:1.75}
+.footer-grid .eyebrow{font-size:.75rem}
+.footer-bottom{font-size:.8rem;justify-content:space-between}
+@media(min-width:1100px) and (max-width:1199px){.site-header nav{gap:17px}.site-header .brand{width:210px}.header-inner{gap:20px}.site-header nav>a:not(.button){font-size:.95rem}.site-header .button-small{padding-inline:20px}}
+@media(max-width:1099px){.js .site-header nav{gap:8px}.site-header nav>a:not(.button){font-size:1.1rem;min-height:48px}.site-header .brand{width:210px}}
+@media(max-width:767px){.site-header .brand{width:190px}.footer-grid .email{font-size:.92rem}.site-footer{padding-top:38px}}
+.activity-card--text{background:#edf0e5;border-top:1px solid #a5b69a;padding:25px 26px 28px;min-width:0}
+.activity-card--text .activity-meta{margin-top:0;flex-direction:column;gap:7px;font-size:.8rem;text-transform:none;letter-spacing:0}
+.activity-card--text h3{margin-top:23px;font-size:1.5rem}
+.activity-read-link{display:inline-block;margin-top:18px;font-size:.9rem;border-bottom:1px solid #8b9d85}
+.activity-card>.activity-photo .editorial-photo img{aspect-ratio:auto}
+.activity-meta{font-size:.75rem;text-transform:none;letter-spacing:0}
+@media(max-width:767px){.activity-card--text{padding:23px}.activity-card--text h3{font-size:1.4rem}}
+.activity-card{min-width:0}
+.activity-card h3 a,.activity-card>p{overflow-wrap:anywhere}

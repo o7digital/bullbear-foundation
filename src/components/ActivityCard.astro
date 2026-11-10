@@ -1,8 +1,17 @@
 ---
-import {Image} from 'astro:assets';import {media} from '../data/media';import Arrow from './Arrow.astro';import type {CollectionEntry} from 'astro:content';
-const {activity}=Astro.props as {activity:CollectionEntry<'activities'>};const a=activity.data;
+import EditorialPhoto from './EditorialPhoto.astro';
+import { homeStories } from '../data/home';
+import type { CollectionEntry } from 'astro:content';
+const { activity } = Astro.props as { activity: CollectionEntry<'activities'> };
+const a = activity.data;
+// Unreviewed collages and small source files stay in their full reports.
+const cover = homeStories.find(story => story.href === `/${a.id}/`);
+const dateLabel = a.dateLabel === 'Fecha no indicada en la fuente' ? 'Fecha no registrada' : a.dateLabel;
 ---
-<article class="activity-card" data-year={a.year} data-category={a.category}>
- <a href={`/${a.id}/`} class="activity-photo">{a.images[0]?<Image src={media(a.images[0])} alt={a.alt} widths={[360,600,900]} sizes="(max-width: 700px) 92vw, 30vw" width={600} height={450} format="webp" loading="lazy"/>:<div class="image-placeholder">Bull & Bear<br/><em>En comunidad.</em></div>}<span class="photo-arrow"><Arrow diagonal/></span></a>
- <div class="activity-meta"><span>{a.category}</span><span>{a.dateLabel}</span></div><h3><a href={`/${a.id}/`}>{a.title}</a></h3><p>{a.summary}</p>
+<article class:list={['activity-card', {'activity-card--text': !cover}]} data-year={a.year} data-category={a.category}>
+  {cover && <a href={`/${a.id}/`} class="activity-photo" aria-label={a.title}><EditorialPhoto file={cover.image} alt={cover.alt} position={cover.position} sizes="(max-width: 767px) 90vw, 30vw"/></a>}
+  <div class="activity-meta"><span>{a.category}</span><span>{dateLabel}</span></div>
+  <h3><a href={`/${a.id}/`}>{a.title}</a></h3>
+  <p>{a.summary}</p>
+  <a class="activity-read-link" href={`/${a.id}/`}>Leer el relato<span class="sr-only">: {a.title}</span></a>
 </article>

@@ -1,7 +1,7 @@
 {
   "date": "2026-11-10",
   "requestedHero": "Original hero with a group of young people, including original composition, crop, texts and buttons",
-  "status": "live-wordpress-reference-recovered",
+  "status": "group-hero-reference-missing",
   "checked": [
     "All Git commits, all branches, reflogs and unreachable objects",
     "Project files, original WordPress HTML and recovered media",
@@ -14,12 +14,17 @@
     "The earliest project commit f509dfd already uses the Christmas photograph in the home hero",
     "No earlier group-of-young-people hero markup, screenshot or crop settings were recovered",
     "The archived WordPress hero uses primer-plano-diversas-personas-uniendo-sus-manos.jpg, a close-up of hands, not the requested group photograph",
-    "Other group photographs exist among the activity media but cannot establish the requested original hero"
+    "Other group photographs exist among the activity media but cannot establish the requested original hero",
+    "The new request explicitly requires the young-people group hero; the hands image previously identified by the user cannot be treated as that missing version."
   ],
-  "implemented": "Restore the hero actually displayed at the user-provided WordPress URL, with its source photograph, full-width composition, responsive crop, original Poppins typography, copy, left green border and outlined action",
-  "preserved": "All other homepage sections, shared header/footer and other routes",
-  "neededToFinish": null,
-  "restoredOriginalHero": true,
+  "implemented": "Preserve the existing hands hero without altering its image, crop, copy or CTA while completing the rest of the art direction. Christmas/Sears remains excluded from the home hero.",
+  "preserved": "Imported content, useful URLs, SEO, Give link, email/telephone, gallery and filters",
+  "neededToFinish": [
+    "Original photograph of the group of young people used in the hero",
+    "Original hero source (Astro/React/HTML/CSS) or a screenshot/accessible previous-version URL showing its composition",
+    "Original desktop/mobile crop settings and original hero copy and CTA labels/targets, if not visible in the screenshot or source"
+  ],
+  "restoredOriginalHero": false,
   "userClarification": "User pointed to https://www.bullandbear-foundation.com/ and asked to inspect the hero photograph",
   "resolvedReference": {
     "source": "https://www.bullandbear-foundation.com/",
@@ -37,30 +42,8 @@
   },
   "originalGroupPortraitFound": false,
   "localValidation": {
-    "build": "passed",
-    "typescript": "0 errors, 0 warnings",
-    "tests": "6 passed",
-    "browser": "Firefox",
-    "viewports": [
-      1440,
-      768,
-      390,
-      360
-    ],
-    "desktopHeroHeight": 920,
-    "mobileHeroHeight": 410.9666748046875,
-    "desktopHeading": {
-      "x": 140,
-      "offsetFromHeroTop": 283.75,
-      "width": 706,
-      "height": 180.6
-    },
-    "mobileHeading": {
-      "x": 50,
-      "offsetFromHeroTop": 60,
-      "width": 300,
-      "height": 98
-    },
-    "belowHeroContent": "Byte-for-byte identical to the previous committed homepage below the mission strip"
-  }
+    "status": "Current art-direction checks tracked in home-art-direction report",
+    "heroComponent": "Unchanged from 54be3c3; this is the hands hero from the earlier WordPress reference, not the missing young-people hero"
+  },
+  "overallRestoration": "Not complete; no alternate group photograph has been substituted"
 }
