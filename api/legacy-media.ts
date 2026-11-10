@@ -6,7 +6,8 @@ export default function handler(request:Request,response:Response){
  const url=new URL(request.url||'/','https://placeholder.invalid');
  const suffix=url.searchParams.get('path')||'';
  const key='/wp-content/uploads/'+suffix.replace(/^\/+/, '');
- const destination=(mappings as Record<string,string>)[key];
+ const canonicalKey=key.split('/').map(segment=>{try{return encodeURIComponent(decodeURIComponent(segment));}catch{return encodeURIComponent(segment);}}).join('/');
+ const destination=(mappings as Record<string,string>)[key]||(mappings as Record<string,string>)[canonicalKey];
  if(!destination){response.statusCode=404;response.end('Archivo no encontrado');return;}
  response.statusCode=301;response.setHeader('Location',destination);response.setHeader('Cache-Control','public, max-age=86400');response.end();
 }
