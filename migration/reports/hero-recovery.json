@@ -1,0 +1,66 @@
+{
+  "date": "2026-11-10",
+  "requestedHero": "Original hero with a group of young people, including original composition, crop, texts and buttons",
+  "status": "live-wordpress-reference-recovered",
+  "checked": [
+    "All Git commits, all branches, reflogs and unreachable objects",
+    "Project files, original WordPress HTML and recovered media",
+    "Original WordPress homepage CSS and its identified hero photograph",
+    "Deployment history of bullbear-foundation-preview",
+    "Available local Bull & Bear source ZIP archives",
+    "Connected Sites and Vercel projects matching the foundation"
+  ],
+  "findings": [
+    "The earliest project commit f509dfd already uses the Christmas photograph in the home hero",
+    "No earlier group-of-young-people hero markup, screenshot or crop settings were recovered",
+    "The archived WordPress hero uses primer-plano-diversas-personas-uniendo-sus-manos.jpg, a close-up of hands, not the requested group photograph",
+    "Other group photographs exist among the activity media but cannot establish the requested original hero"
+  ],
+  "implemented": "Restore the hero actually displayed at the user-provided WordPress URL, with its source photograph, full-width composition, responsive crop, original Poppins typography, copy, left green border and outlined action",
+  "preserved": "All other homepage sections, shared header/footer and other routes",
+  "neededToFinish": null,
+  "restoredOriginalHero": true,
+  "userClarification": "User pointed to https://www.bullandbear-foundation.com/ and asked to inspect the hero photograph",
+  "resolvedReference": {
+    "source": "https://www.bullandbear-foundation.com/",
+    "photograph": "https://www.bullandbear-foundation.com/wp-content/uploads/2023/09/primer-plano-diversas-personas-uniendo-sus-manos.jpg",
+    "visualDescription": "Close-up of a group of people joining their hands",
+    "heading": "Una cultura universal",
+    "subtitle": "una ayúda mutua",
+    "button": {
+      "label": "¿Deseas ayudar?",
+      "originalDestination": "https://bullandbear-foundation.com/contacto/",
+      "localDestination": "/contacto/"
+    },
+    "crop": "center center / cover",
+    "referenceMeasurements": "1440x1000, 768x1000, 390x1000, Firefox"
+  },
+  "originalGroupPortraitFound": false,
+  "localValidation": {
+    "build": "passed",
+    "typescript": "0 errors, 0 warnings",
+    "tests": "6 passed",
+    "browser": "Firefox",
+    "viewports": [
+      1440,
+      768,
+      390,
+      360
+    ],
+    "desktopHeroHeight": 920,
+    "mobileHeroHeight": 410.9666748046875,
+    "desktopHeading": {
+      "x": 140,
+      "offsetFromHeroTop": 283.75,
+      "width": 706,
+      "height": 180.6
+    },
+    "mobileHeading": {
+      "x": 50,
+      "offsetFromHeroTop": 60,
+      "width": 300,
+      "height": 98
+    },
+    "belowHeroContent": "Byte-for-byte identical to the previous committed homepage below the mission strip"
+  }
+}

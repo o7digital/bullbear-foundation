@@ -13378,5 +13378,17 @@
     "width": 658,
     "height": 878,
     "sha256": "5a062777b90d9b19e3d919cfb2b158df1a9dfc5281675af28036c897f3339c7a"
+  },
+  {
+    "source_url": "https://www.bullandbear-foundation.com/wp-content/uploads/2023/09/primer-plano-diversas-personas-uniendo-sus-manos.jpg",
+    "found_on": "https://www.bullandbear-foundation.com/",
+    "role": "Original homepage hero explicitly identified by user through live WordPress reference",
+    "http_status": "200",
+    "downloaded": true,
+    "local_file": "src/assets/source/853a574a8c-primer-plano-diversas-personas-uniendo-sus-manos.jpg",
+    "bytes": 54406,
+    "width": 1200,
+    "height": 675,
+    "sha256": "149ea92d4d1bfbf469985c82f7333aed646904cee27f7ecca73418455d60a7a4"
   }
 ]
